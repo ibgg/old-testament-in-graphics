@@ -1,0 +1,74 @@
+[
+    {
+        "biblical_quote": "Génesis 10:24, 11:12 Septuaginta",
+        "description": "En el texto hebreo de las Escrituras no se menciona la existencia de Cainán, pero hay una mención acerca de él en la versión Septuaginta, en Génesis 10:24 y 11:12,13, así como en 1 Crónicas 1:18, Lucas 3:36 también lo menciona. Según la Septuaginta, Cainán tenía 130 años cuando nació Sala, y además vivió 300 años después de su nacimiento. Esto significaría que Cainán nació en el año 2611 a.C. (2481 a.C. más 130 años), y murió en el año 2151 a.C. (2481 a.C. menos 330 años).",
+        "end_date": "-002151-01-01T06:57:40.000Z",
+        "event_name": "Cainán",
+        "index": 0,
+        "start_date": "-002611-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 11:14,15",
+        "description": "Sala, el padre de Heber tenía 30 años cuando nació éste, además vivió otros 403 años (Génesis 11:14,15). Por lo tanto, la fecha de nacimiento de Sala sería el año 2481 a.C. (2451 a.C. más 30 años), y la fecha en que murió fue el año 2048 a.C. (2451 menos 403 años).",
+        "end_date": "-002048-01-01T06:57:40.000Z",
+        "event_name": "Sala",
+        "index": 1,
+        "start_date": "-002481-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 11:16,17",
+        "description": "Heber tenía 34 años cuando nació Peleg, su hijo. Además, vivió otros 430 años después que éste nació (Génesis 11:16,17), de este modo, podemos deducir que Heber nació en el año 2451 a.C. (es decir 2417 a.C. más 34 años) y murió en el año 1987 a.C. (2417 menos 430 años). Es decir, <b>Heber</b> vivió hasta después de que <b>Abraham</b> entró a la tierra prometida en Canaán. Si el testimonio de las tablillas excavadas en Ebla es correcto, el término <i>hebreo</i> podría venir del nombre de <b>Heber</b>.",
+        "end_date": "-001987-01-01T06:57:40.000Z",
+        "event_name": "Heber",
+        "index": 2,
+        "start_date": "-002451-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 11:18,19",
+        "description": "Reu, el padre de Peleg tenía 30 años cuando éste nació, además vivió otros 209 años después de que este nació. De este modo podemos fechar el nacimiento de Peleg en el año 2417 a.C. (2387 a.C. más 30 años), y la fecha de su muerte en el 2178 a.C. (2387 a.C. menos 209 años).",
+        "end_date": "-002178-01-01T06:57:40.000Z",
+        "event_name": "Peleg",
+        "index": 3,
+        "start_date": "-002417-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 11:20,21",
+        "description": "Reu, el padre de Serug, era de 32 años cuando nació Serug, además, vivió 207 años más (Génesis 11:20,21), de este modo, podemos deducir la fecha de su nacimiento en el año 2387 (2355 a.C. - fecha del nacimiento de Serug más 32 años), y la fecha de su muerte sería el año 2148 a.C. (2355 a.C., menos 207 años).",
+        "end_date": "-002148-01-01T06:57:40.000Z",
+        "event_name": "Reu",
+        "index": 4,
+        "start_date": "-002387-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 11:22,23",
+        "description": "Serug, padre de Nacor tenía 30 años cuando nació Nacor, luego vivió 200 años más (Génesis 11:22,23); por lo tanto, la fecha de nacimiento de Serug sería el 2355 a.C. (es decir 2325 a.C. más 30 años) y la fecha de su muerte en el 2125 a.C. (2355 a.C. menos 230 años).",
+        "end_date": "-002125-01-01T06:57:40.000Z",
+        "event_name": "Serug",
+        "index": 5,
+        "start_date": "-002355-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 11:24",
+        "description": "Si Taré nació cuando su padre Nacor tenía 29 años (Génesis 11:24), y además, Nacor vivió otros  119 años (Génesis 11:25), Nacor debió haber nacido en el año 2325 a.C. (2296 a.C. más 29 años)",
+        "end_date": "-002177-01-01T06:57:40.000Z",
+        "event_name": "Nacor",
+        "index": 6,
+        "start_date": "-002325-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 11:32",
+        "description": "Fue padre de Abraham, y habría sido un idólatra durante muchos años (Josué 24:2) antes de llevar a su familia desde Ur de los caldeos hasta Harán, donde murió a la edad de 205 años (Génesis 11:32).",
+        "end_date": "-002091-01-01T06:57:40.000Z",
+        "event_name": "Taré",
+        "index": 7,
+        "start_date": "-002296-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 11:27;15:13",
+        "description": "Según Génesis 15:13, Israel vivió en Egipto durante 400 años antes de su partida en el Éxodo, es decir, al rededor del año 1876 a.C. (cf. Gálatas 3:17). Lo que significa que Jacob entró en Egipto cuando esta aún no era una nación muy poderosa. <b><t>Hay quienes insisten en que Jacob debió entrar en Egipto después del periodo de los hicsos, pues los Israelitas habrían podido encontrar un acceso más fácil después de esa época. Sin embargo, los hicsos salieron de Egipto hasta el año 1570 a.C. Esto recorrería la fecha del éxodo hasta el 1270 a.C., esta es conocida como &quot;la fecha tardía&quot;, la cual es dudosa en otros aspectos.",
+        "end_date": "-001991-01-01T06:57:40.000Z",
+        "event_name": "Abraham",
+        "index": 8,
+        "start_date": "-002166-01-01T06:57:40.000Z"
+    }
+]

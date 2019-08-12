@@ -1,0 +1,72 @@
+[
+    {
+        "biblical_quote": "Génesis 5:3,4",
+        "description": "Adán era de 130 años cuando nació Set, luego vivió otros 800 años más.",
+        "end_date": "0928-01-01T06:57:40.000Z",
+        "event_name": "Adán",
+        "start_date": "-000002-12-31T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 5:6,7",
+        "description": "Set era de 105 años cuando nació Enós, luego vivió otros 807 años más.",
+        "end_date": "1042-01-01T06:57:40.000Z",
+        "event_name": "Set",
+        "start_date": "0130-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 5:9,10",
+        "description": "Enós era de 90 años cuando nació Cainán, luego vivió otros 815 años más.",
+        "end_date": "1140-01-01T06:57:40.000Z",
+        "event_name": "Enós",
+        "start_date": "0235-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 5:12,13",
+        "description": "Cainán era de 70 años cuando nació Mahalaleel, luego vivió otros 840 años más.",
+        "end_date": "1235-01-01T06:57:40.000Z",
+        "event_name": "Cainán",
+        "start_date": "0325-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 5:15,16",
+        "description": "Mahalaleel era de 65 años cuando nació Jared, luego vivió otros 830 años más.",
+        "end_date": "1290-01-01T06:57:40.000Z",
+        "event_name": "Mahalaleel",
+        "start_date": "0395-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 5:18,19",
+        "description": "Jared era de 162 años cuando nació Enoc, luego vivió otros 800 años más.",
+        "end_date": "1142-01-01T06:57:40.000Z",
+        "event_name": "Jared",
+        "start_date": "0460-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 5:21,24",
+        "description": "Enoc era de 65 años cuando nació Matusalén, luego vivió otros 300 años hasta que Dios lo llevó al cielo",
+        "end_date": "0987-01-01T06:57:40.000Z",
+        "event_name": "Enoc",
+        "start_date": "0622-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 5:25-26",
+        "description": "Matusalén era de 187 años cuando nació Lamec, luego vivió otros 782 años más. El lapso total del tiempo de vida de Matusalén haría coincidir el año de su muerte con el diluvio ¿significa esto que Matusalén murió durante el diluvio? Es probable, pero la Biblia no dice nada al respecto.",
+        "end_date": "1656-01-01T06:57:40.000Z",
+        "event_name": "Matusalén",
+        "start_date": "0687-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 5:29,30",
+        "description": "Lamec era de 182 años cuando nació Noé, luego vivió otros 592 años más.",
+        "end_date": "1651-01-01T06:57:40.000Z",
+        "event_name": "Lamec",
+        "start_date": "0874-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Génesis 5:32",
+        "description": "Noé era de 500 años cuando nacieron sus tres hijos. Dios le ordenó consrtuir un barco para subir él, su familia y ciertos animales, a fin de sobrevivir al diluvio universal que Dios envió para destruir completamente la vida terrestre. El diluvio sucedió en el año 600 de la vida de Noé (Génesis 7:26). Después del diluvio, Noé vivió 350 años más y murió a la edad de 950 años",
+        "end_date": "2006-01-01T07:00:00.000Z",
+        "event_name": "Noé",
+        "start_date": "1056-01-01T06:57:40.000Z"
+    }
+]

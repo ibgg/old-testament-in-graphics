@@ -1,0 +1,91 @@
+[
+    {
+        "description": "Un cálculo de 5 años de apostasía.",
+        "end_date": "-001375-01-01T06:57:40.000Z",
+        "event_name": "1a apostasía",
+        "start_date": "-001380-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Jueces 3:8",
+        "description": "Opresión, 8 años.",
+        "end_date": "-001367-01-01T06:57:40.000Z",
+        "event_name": "1a opresión",
+        "start_date": "-001375-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Jueces 3:11",
+        "description": "Librados por Otoniel: 40 años de descanso.",
+        "end_date": "-001327-01-01T06:57:40.000Z",
+        "event_name": "Liberados por Otoniel",
+        "start_date": "-001367-01-01T06:57:40.000Z"
+    },
+    {
+        "description": "Unos 5 años de apostasía",
+        "end_date": "-001322-01-01T06:57:40.000Z",
+        "event_name": "2a apostasía",
+        "start_date": "-001327-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Jueces 3:14",
+        "description": "Opresión bajo Moab, 18 años",
+        "end_date": "-001304-01-01T06:57:40.000Z",
+        "event_name": "Opresión bajo Moab",
+        "start_date": "-001322-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Jueves 3:31",
+        "description": "Liberados por Aod, 80 años.",
+        "end_date": "-001224-01-01T06:57:40.000Z",
+        "event_name": "Liberados por Aod",
+        "start_date": "-001304-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Jueces 5:31",
+        "description": "Liberados por Débora, 40 años de descannso.",
+        "end_date": "-001184-01-01T06:57:40.000Z",
+        "event_name": "Liberados por Débora",
+        "start_date": "-001224-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Jueces 6:1",
+        "description": "Opresión bajo Madián, 7 años.",
+        "end_date": "-001177-01-01T06:57:40.000Z",
+        "event_name": "Opresión bajo Madián",
+        "start_date": "-001184-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Jueces 8:28",
+        "description": "Liberados por Gedeón, 40 años de descanso.",
+        "end_date": "-001137-01-01T06:57:40.000Z",
+        "event_name": "Liberados por Gedeón",
+        "start_date": "-001177-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Jueces 9:22",
+        "description": "Reinado de Abimelec, 3 años",
+        "end_date": "-001134-01-01T06:57:40.000Z",
+        "event_name": "Reinado de Abimelec",
+        "start_date": "-001137-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Jueces 10:2,3",
+        "description": "Tola y Jair, 45 años",
+        "end_date": "-001089-01-01T06:57:40.000Z",
+        "event_name": "Tola y Jair",
+        "start_date": "-001134-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Jueces 12:7",
+        "description": "Jefté, 6 años.",
+        "end_date": "-001083-01-01T06:57:40.000Z",
+        "event_name": "Jefté",
+        "start_date": "-001089-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Jueces 12:9, 11, 14",
+        "description": "Izbán, Elón y Abadón, 25 años.",
+        "end_date": "-001058-01-01T06:57:40.000Z",
+        "event_name": "Izbán, Elón y Abadón",
+        "start_date": "-001083-01-01T06:57:40.000Z"
+    }
+]

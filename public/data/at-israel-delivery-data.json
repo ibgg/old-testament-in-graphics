@@ -1,0 +1,29 @@
+[
+    {
+        "description": "Moisés vivió 40 años en el palacio real como hijo adoptivo de Hatshepsut, la hija de Tutmés I",
+        "event_name": "Nacimiento de Moisés",
+        "start_date": "-001526-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Hechos 7:23",
+        "description": "En el año 1486 a.C. (1526 a.C. menos 40 años) huyó al desierto.",
+        "event_name": "Moisés huye al desierto",
+        "start_date": "-001486-01-01T06:57:40.000Z"
+    },
+    {
+        "biblical_quote": "Hechos 7:30",
+        "description": "<p>Moisés pasó 40 años en el desierto cuidando las ovejas de su suegro Jetro. Luego Dios lo llamó para que guiara a su pueblo en su salida de Egipto y ;lo convirtiera en un pueblo libre, en el año 1446 a.C. (cf. Hechos 7:30).</p> <p> Hasta el año 1406 a.C., Moisés condujo a los israelitas por un camino sembrado de rebeldías, hasta llegar finalmente a la Tierra Prometida.",
+        "event_name": "El éxodo",
+        "start_date": "-001446-01-01T06:57:40.000Z"
+    },
+    {
+        "description": "Acampan en la rivera oriental.",
+        "event_name": "Acampan en la rivera oriental",
+        "start_date": "-001406-01-01T06:57:40.000Z"
+    },
+    {
+        "description": "Conquistan la tierra.",
+        "event_name": "Conquistan la tierra",
+        "start_date": "-001339-01-01T06:57:40.000Z"
+    }
+]
