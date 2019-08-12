@@ -1,65 +1,333 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/6.3.5/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/6.3.5/firebase-auth.js"></script>
-    <script defer src="/__/firebase/6.3.5/firebase-database.js"></script>
-    <script defer src="/__/firebase/6.3.5/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/6.3.5/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+	<title>Timeline de Eventos del Antiguo Testamento</title>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+	<!-- Custom fonts for this template-->
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link
+		href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+	<!-- Custom styles for this template-->
+	<link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this page -->
+	<link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+	<!-- Timeline styles for this template-->
+	<link href="css/timeline-theme.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+	<!-- Page Wrapper -->
+	<div id="wrapper">
+
+		<!-- Sidebar -->
+		<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+			<!-- Sidebar - Brand -->
+			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+				<div class="sidebar-brand-text mx-1">Timeline de Eventos del AT</div>
+			</a>
+
+			<!-- Heading -->
+			<div class="sidebar-heading">
+				Interface
+			</div>
+
+			<!-- Nav Item - Pages Collapse Menu -->
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">
+					<i class="fas fa-fw fa-chart-area"></i>
+					<span>Reyes de Israel (Reino dividido)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="israel-unified.html">
+					<i class="fas fa-fw fa-chart-area"></i>
+					<span>Reyes de Israel (Reino unificado)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="judges.html">
+					<i class="fas fa-fw fa-chart-area"></i>
+					<span>Los jueces</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="israel_delivery.html">
+					<i class="fas fa-fw fa-chart-area"></i>
+					<span>La liberación de Israel</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="israel-patriarchs.html">
+					<i class="fas fa-fw fa-chart-area"></i>
+					<span>Patriarcas de Israel</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="universal-flood.html">
+					<i class="fas fa-fw fa-chart-area"></i>
+					<span>Desde el diluvio hasta Abraham</span></a>
+			</li>
+			<li class="nav-item">
+					<a class="nav-link" href="creation.html">
+					<i class="fas fa-fw fa-chart-area"></i>
+					<span>Desde Adán hasta el diluvio</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<i class="fas fa-fw fa-chart-area"></i>
+					<span>Acontecimientos postexílicos</span></a>
+			</li>
+			<!-- Divider -->
+			<hr class="sidebar-divider d-none d-md-block">
+
+			<!-- Sidebar Toggler (Sidebar) -->
+			<div class="text-center d-none d-md-inline">
+				<button class="rounded-circle border-0" id="sidebarToggle"></button>
+			</div>
+		</ul>
+		<!-- End of Sidebar -->
+
+		<!-- Content Wrapper -->
+		<div id="content-wrapper" class="d-flex flex-column">
+
+			<!-- Main Content -->
+			<div id="content">
+
+				<!-- Topbar -->
+				<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+					<!-- Sidebar Toggle (Topbar) -->
+					<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+						<i class="fa fa-bars"></i>
+					</button>
+
+					<h1 class="h3 mb-0 text-gray-800">Timeline de Eventos del Antiguo Testamento</h1>
+				</nav>
+				<!-- End of Topbar -->
+
+				<!-- Begin Page Content -->
+				<div class="container-fluid">
+
+					<!-- Content Row -->
+					<div class="row">
+						<!-- Area Chart -->
+						<div class="col-xl-12 col-lg-12">
+							<div class="card shadow mb-4 h-100">
+								<!-- Card Header - Dropdown -->
+								<div
+									class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+									<h6 class="m-0 font-weight-bold text-primary" id="card_title_israel">Reyes de
+										Israel</h6>
+									<form class="float-right d-none d-sm-inline-block form-inline">
+										<div class="form-inline">
+											<div>
+												<a href="#" class="btn btn-info btn-sm btn-circle" id="zoom_in_israel">
+													<i class="fas fa-fw fa-plus"></i>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="btn btn-info btn-sm btn-circle" id="zoom_out_israel">
+													<i class="fas fa-fw fa-minus"></i>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="btn btn-info btn-sm btn-circle"
+													id="adjust_view_israel">
+													<i class="far fa-square" id="zoom_in_israel"></i>
+												</a>
+											</div>
+
+											<input type="text" class="form-control form-control-sm border-1 small"
+												placeholder="Buscar por nombre..." aria-label="Search"
+												aria-describedby="basic-addon2" id="search_israel">
+											<div class="input-group-append">
+												<button class="btn btn-sm btn-primary" type="button"
+													id="btn_israel">
+													<i class="fas fa-search fa-sm"></i>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<!-- Card Body -->
+								<div class="card-body-timeline d-flex">
+									<div class="timeline-area align-self-end">
+										<div id="timeline_israel"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div>&nbsp;</div>
+					<!-- Content Row -->
+					<div class="row">
+
+						<!-- Area Chart -->
+						<div class="col-xl-12 col-lg-12">
+							<div class="card shadow mb-4 h-100">
+								<!-- Card Header - Dropdown -->
+								<div
+									class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+									<h6 class="m-0 font-weight-bold text-primary" id="card_title_judah">Reyes de
+										Judá</h6>
+									<form class="float-right d-none d-sm-inline-block form-inline">
+										<div class="form-inline">
+											<div>
+												<a href="#" class="btn btn-info btn-sm btn-circle" id="zoom_in_judah">
+													<i class="fas fa-fw fa-plus"></i>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="btn btn-info btn-sm btn-circle" id="zoom_out_judah">
+													<i class="fas fa-fw fa-minus"></i>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="btn btn-info btn-sm btn-circle"
+													id="adjust_view_judah">
+													<i class="far fa-square"></i>
+												</a>
+											</div>
+											<input type="text" class="form-control form-control-sm border-1 small"
+												placeholder="Buscar por nombre..." aria-label="Search"
+												aria-describedby="basic-addon2" id="search_judah">
+											<div class="input-group-append">
+												<button class="btn btn-sm btn-primary" type="button"
+													id="btn_judah">
+													<i class="fas fa-search fa-sm"></i>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<!-- Card Body -->
+								<div class="card-body-timeline d-flex">
+									<div class="timeline-area align-self-end">
+										<div id="timeline_judah"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>&nbsp;</div>
+
+					<div class="row">
+						<div class="col-xl-16 col-lg-6">
+							<div class="card shadow mb-4">
+								<div class="card-header py-3">
+									<h6 class="m-0 font-weight-bold text-primary">LOS REYES DE ISRAEL</h6>
+								</div>
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover general-event-description" id="dataTable_israel"
+											width="100%" cellspacing="0">
+											<thead>
+												<tr>
+													<th>Nombre</th>
+													<th>Reinado<br>(años)</th>
+													<th>Referencia</th>
+												</tr>
+											</thead>
+											<tbody>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-16 col-lg-6">
+							<div class="card shadow mb-4">
+								<div class="card-header py-3">
+									<h6 class="m-0 font-weight-bold text-primary">LOS REYES DE JUDÁ</h6>
+								</div>
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover general-event-description" id="dataTable_judah"
+											width="100%" cellspacing="0">
+											<thead>
+												<tr>
+													<th>Nombre</th>
+													<th>Reinado<br>(años)</th>
+													<th>Referencia</th>
+												</tr>
+											</thead>
+											<tbody>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.container-fluid -->
+
+			</div>
+			<!-- End of Main Content -->
+
+			<!-- Footer -->
+			<footer class="sticky-footer bg-white">
+				<div class="container my-auto">
+					<div class="copyright text-center my-auto">
+						<span>Copyright &copy; Your Website 2019</span>
+					</div>
+				</div>
+			</footer>
+			<!-- End of Footer -->
+
+		</div>
+		<!-- End of Content Wrapper -->
+
+	</div>
+	<!-- End of Page Wrapper -->
+
+	<!-- Scroll to Top Button-->
+	<a class="scroll-to-top rounded" href="#page-top">
+		<i class="fas fa-angle-up"></i>
+	</a>
+	<script type="text/javascript" src="http://www.gstatic.com/charts/loader.js"></script>
+
+	<!-- Popoover-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+	<!-- Bootstrap core JavaScript-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- Core plugin JavaScript-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/3.3.7+1/js/sb-admin-2.min.js"></script>
+
+	<!-- Page level plugins -->
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/sl-1.3.0/datatables.min.js"></script>
+	<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+	<!-- timeline javascript library -->
+	<script type="text/javascript" src="js/libs/timeline.js"></script>
+
+	<!-- timeline for months languages-->
+	<script type="text/javascript" src="js/libs/timeline-locales.js"></script>
+
+	<!-- Utiles -->
+	<script type="text/javascript" src="js/utils/util.js"></script>
+	<script type="text/javascript" src="js/utils/timeline-util.js"></script>
+	<script type="text/javascript" src="js/utils/table-util.js"></script>
+
+	<!-- timeline javascript library -->
+	<script type="text/javascript" src="js/at-kings-timeline.js"></script>
+
+</body>
+
 </html>
