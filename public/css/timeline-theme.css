@@ -201,6 +201,15 @@ div.timeline-event-selected div.timeline-event-content {
 	white-space: nowrap;
 }
 
+.timeline-box-label {
+	margin-bottom: 0!important;
+	font-size: 0.85rem;
+	line-height: 1.2;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+
 .general-event-description {
 	color: #3c3d4e!important;
 	margin-bottom: 0!important;
@@ -271,4 +280,23 @@ div.timeline-event-box.no-border {
     color: #000;
     text-shadow: 0 1px 0 #fff;
     /* opacity: .5; */
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    padding-bottom: 0rem;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1rem!important;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+	margin-bottom: 1rem;
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,14 +20,13 @@
 	<!-- Custom styles for this template-->
 	<link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-	<!-- Custom styles for this page -->
-	<link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
 	<!-- Timeline styles for this template-->
 	<link href="css/timeline-theme.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
+
 	<!-- Page Wrapper -->
 	<div id="wrapper">
 
@@ -127,39 +127,38 @@
 					</div>
 					<!-- Content Row -->
 					<div class="row">
+
 						<!-- Area Chart -->
 						<div class="col-xl-12 col-lg-12">
 							<div class="card shadow mb-4 h-100">
 								<!-- Card Header - Dropdown -->
 								<div
 									class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-									<h6 class="m-0 font-weight-bold text-primary" id="card_title_israel">Reyes de
-										Israel</h6>
+									<h6 class="m-0 font-weight-bold text-primary" id="card_title_postexile">LÍNEA DEL TIEMPO DE LOS PATRIARCAS DE ISRAEL</h6>
 									<form class="float-right d-none d-sm-inline-block form-inline">
 										<div class="form-inline">
 											<div>
-												<a href="#" class="btn btn-info btn-sm btn-circle" id="zoom_in_israel">
+												<a href="#" class="btn btn-info btn-sm btn-circle" id="zoom_in_postexile">
 													<i class="fas fa-fw fa-plus"></i>
 												</a>
 											</div>
 											<div>
-												<a href="#" class="btn btn-info btn-sm btn-circle" id="zoom_out_israel">
+												<a href="#" class="btn btn-info btn-sm btn-circle" id="zoom_out_postexile">
 													<i class="fas fa-fw fa-minus"></i>
 												</a>
 											</div>
 											<div>
 												<a href="#" class="btn btn-info btn-sm btn-circle"
-													id="adjust_view_israel">
-													<i class="far fa-square" id="zoom_in_israel"></i>
+													id="adjust_view_postexile">
+													<i class="far fa-square" id="zoom_in_postexile"></i>
 												</a>
 											</div>
 
 											<input type="text" class="form-control form-control-sm border-1 small"
 												placeholder="Buscar por nombre..." aria-label="Search"
-												aria-describedby="basic-addon2" id="search_israel">
+												aria-describedby="basic-addon2" id="search_postexile">
 											<div class="input-group-append">
-												<button class="btn btn-sm btn-primary" type="button"
-													id="btn_israel">
+												<button class="btn btn-sm btn-primary" type="button" id="btn_postexile">
 													<i class="fas fa-search fa-sm"></i>
 												</button>
 											</div>
@@ -169,126 +168,17 @@
 								<!-- Card Body -->
 								<div class="card-body-timeline d-flex">
 									<div class="timeline-area align-self-end">
-										<div id="timeline_israel"></div>
+										<div id="timeline_postexile"></div>
 									</div>
 								</div>
 								<div class="card-footer text-muted">
 									Ctrl + scroll para hacer zoom
 								  </div>
-
-							</div>
-						</div>
-
-					</div>
-
-					<div>&nbsp;</div>
-					<!-- Content Row -->
-					<div class="row">
-
-						<!-- Area Chart -->
-						<div class="col-xl-12 col-lg-12">
-							<div class="card shadow mb-4 h-100">
-								<!-- Card Header - Dropdown -->
-								<div
-									class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-									<h6 class="m-0 font-weight-bold text-primary" id="card_title_judah">Reyes de
-										Judá</h6>
-									<form class="float-right d-none d-sm-inline-block form-inline">
-										<div class="form-inline">
-											<div>
-												<a href="#" class="btn btn-info btn-sm btn-circle" id="zoom_in_judah">
-													<i class="fas fa-fw fa-plus"></i>
-												</a>
-											</div>
-											<div>
-												<a href="#" class="btn btn-info btn-sm btn-circle" id="zoom_out_judah">
-													<i class="fas fa-fw fa-minus"></i>
-												</a>
-											</div>
-											<div>
-												<a href="#" class="btn btn-info btn-sm btn-circle"
-													id="adjust_view_judah">
-													<i class="far fa-square"></i>
-												</a>
-											</div>
-											<input type="text" class="form-control form-control-sm border-1 small"
-												placeholder="Buscar por nombre..." aria-label="Search"
-												aria-describedby="basic-addon2" id="search_judah">
-											<div class="input-group-append">
-												<button class="btn btn-sm btn-primary" type="button"
-													id="btn_judah">
-													<i class="fas fa-search fa-sm"></i>
-												</button>
-											</div>
-										</div>
-									</form>
-								</div>
-								<!-- Card Body -->
-								<div class="card-body-timeline d-flex">
-									<div class="timeline-area align-self-end">
-										<div id="timeline_judah"></div>
-									</div>
-								</div>
-								<div class="card-footer text-muted">
-									Ctrl + scroll para hacer zoom
-								  </div>
-							</div>
-						</div>
-					</div>
-
-					<div>&nbsp;</div>
-
-					<div class="row">
-						<div class="col-xl-16 col-lg-6">
-							<div class="card shadow mb-4">
-								<div class="card-header py-3">
-									<h6 class="m-0 font-weight-bold text-primary">LOS REYES DE ISRAEL</h6>
-								</div>
-								<div class="card-body">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover general-event-description" id="dataTable_israel"
-											width="100%" cellspacing="0">
-											<thead>
-												<tr>
-													<th>Nombre</th>
-													<th>Reinado<br>(años)</th>
-													<th>Referencia</th>
-												</tr>
-											</thead>
-											<tbody>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-16 col-lg-6">
-							<div class="card shadow mb-4">
-								<div class="card-header py-3">
-									<h6 class="m-0 font-weight-bold text-primary">LOS REYES DE JUDÁ</h6>
-								</div>
-								<div class="card-body">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover general-event-description" id="dataTable_judah"
-											width="100%" cellspacing="0">
-											<thead>
-												<tr>
-													<th>Nombre</th>
-													<th>Reinado<br>(años)</th>
-													<th>Referencia</th>
-												</tr>
-											</thead>
-											<tbody>
-											</tbody>
-										</table>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- /.container-fluid -->
-
 			</div>
 			<!-- End of Main Content -->
 
@@ -296,7 +186,7 @@
 			<footer class="sticky-footer bg-white">
 				<div class="container my-auto">
 					<div class="copyright text-center my-auto">
-						<span>Copyright &copy; Your Website 2019</span>
+						<span>Copyright &copy; Old Testament in Graphics 2019</span>
 					</div>
 				</div>
 			</footer>
@@ -355,8 +245,7 @@
 	<script type="text/javascript" src="js/utils/chart-util.js"></script>
 
 	<!-- timeline javascript library -->
-	<script type="text/javascript" src="js/at-kings-timeline.js"></script>
-
+	<script type="text/javascript" src="js/at-israel-postexile-timeline.js"></script>
 </body>
 
 </html>

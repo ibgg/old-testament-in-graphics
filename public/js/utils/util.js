@@ -103,7 +103,7 @@ function getSelectedRow(timeline) {
 
 var getPeriod = function (start_date, end_date){
 	var years = Math.abs( Math.abs(start_date.getFullYear()) - Math.abs(end_date.getFullYear()) );
-	console.log("start %d end %d years %d ", Math.abs(start_date.getFullYear()), Math.abs(end_date.getFullYear()),  years);
+	//console.log("start %d end %d years %d ", Math.abs(start_date.getFullYear()), Math.abs(end_date.getFullYear()),  years);
 	if (years > 0){
 		return years;
 	}else{

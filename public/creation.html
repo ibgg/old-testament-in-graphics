@@ -35,12 +35,12 @@
 
 			<!-- Sidebar - Brand -->
 			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-				<div class="sidebar-brand-text mx-1">Timeline de Eventos del AT</div>
+				<div class="sidebar-brand-text mx-1">Eventos del AT</div>
 			</a>
 
 			<!-- Heading -->
 			<div class="sidebar-heading">
-				Interface
+				Timelines
 			</div>
 
 			<!-- Nav Item - Pages Collapse Menu -->
@@ -80,7 +80,7 @@
 					<span>Desde Adán hasta el diluvio</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">
+				<a class="nav-link" href="israel-postexile.html">
 					<i class="fas fa-fw fa-chart-area"></i>
 					<span>Acontecimientos postexílicos</span></a>
 			</li>
@@ -116,7 +116,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xl-16 col-md-12 mb-4">
-								<div class="card mb-4">
+								<div class="card shadow mb-4">
 										<div class="card-header">
 											<h6 class="m-0 font-weight-bold text-primary" id="general-event-title"></h6>
 										</div>
@@ -178,7 +178,7 @@
 					</div>
 					<div class="row">
 							<div class="col-xl-16 col-md-12 mb-4">
-									<div class="card mb-4">
+									<div class="card shadow mb-4">
 											<div class="card-header">
 												<h6 class="m-0 font-weight-bold text-primary" id="family_tree_title_creation">GENEALOGÍA DESDE ADÁN HASTA NOÉ</h6>
 											</div>
@@ -215,30 +215,47 @@
 		<i class="fas fa-angle-up"></i>
 	</a>
 
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/6.3.5/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
+
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script type="text/javascript" src="js/utils/chart-util.js"></script>
 
 	<!-- Popoover-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
 	<!-- Bootstrap core JavaScript-->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 	<!-- Core plugin JavaScript-->
-	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="js/libs/sb-admin-2.js"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/3.3.7+1/js/sb-admin-2.min.js"></script>
 
 	<!-- Page level plugins -->
-	<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/sl-1.3.0/datatables.min.js"></script>
 	<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
 	<!-- timeline javascript library -->
 	<script type="text/javascript" src="js/libs/timeline.js"></script>
 
+	<!-- timeline for months languages-->
+	<script type="text/javascript" src="js/libs/timeline-locales.js"></script>
+
 	<!-- Utiles -->
 	<script type="text/javascript" src="js/utils/util.js"></script>
 	<script type="text/javascript" src="js/utils/timeline-util.js"></script>
 	<script type="text/javascript" src="js/utils/table-util.js"></script>
+	<script type="text/javascript" src="js/utils/chart-util.js"></script>
 
 	<!-- timeline javascript library -->
 	<script type="text/javascript" src="js/at-creation-timeline.js"></script>
