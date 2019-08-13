@@ -300,3 +300,7 @@ div.timeline-event-box.no-border {
     overflow-x: auto;
 	margin-bottom: 1rem;
 }
+
+hr.dotted {
+	border-top: 1px dotted #8c8b8b;
+}
