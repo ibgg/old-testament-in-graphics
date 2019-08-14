@@ -10,7 +10,7 @@ class BibleTimelineEvents{
 		this.itemType = itemType;
 
 		this.timeline = undefined;
-		this.searchIndex = 0;
+		this.searchIndex = -1;
 		this.options = {
 			"width":  "100%",
 			"locale": "es"
