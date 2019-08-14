@@ -1,4 +1,7 @@
 var setupTable = function (postfix, timeline1, timeline2, config){
+	var israel_kings_card_title_id = $("#card_title_israel").get(0);
+	var israel_kings_card_title_position = israel_kings_card_title_id.getBoundingClientRect().top + window.scrollY;
+
 	var optionsData ={
 		ordering:false,
 		select: true,

@@ -1,6 +1,6 @@
 var general_event = {
 	title: "LA MONARQUÍA DE ISRAEL",
-	description: "<p>Israel comenzó siendo una alianza de doce tribus que tenían en común cierto lazos étnicos, pero aún más, tenían la fe en Yahvéh como común denominador. A fines del periodo descrito en 1 y 2 Samuel y 1 Reyes 1:11, Israel es la nación más poderosa de Asia occidental. Este periodo de la historia de Israel corresponde básicamente a la historia de cuatro personas: Samuel, Saúl, David y Salomón."
+	description: "<p>Israel comenzó siendo una alianza de doce tribus que tenían en común cierto lazos étnicos, pero aún más, tenían la fe en Yahvéh como común denominador. A fines del periodo descrito en 1 y 2 S y 1 R 1:11, Israel era la nación más poderosa de Asia occidental. Este periodo de la historia de Israel corresponde básicamente a la historia de cuatro personas: Samuel, Saúl, David y Salomón."
 }
 
 $(document).ready(function(){

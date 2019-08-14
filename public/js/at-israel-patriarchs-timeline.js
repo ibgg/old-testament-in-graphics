@@ -2,7 +2,7 @@ var patriarchs_timeline_v;
 
 var general_event = {
 	title: "PATRIARCAS DE ISRAEL",
-	description: "<p>Si aceptamos el año 1446 a.C. como la fecha del éxodo, podemos ir retrocediendo en la línea del tiempo para ir llenando la historia de los patriarcas. <p>La Biblia afirma que Jacob tenía 130 años cuando entró en Egipto (Génesis 47:9, 28). José tenía 39 años (30 años, más 7 años, más 2 años, según Génesis 41:16-47; 45:6). Con la fecha de 1867 (fecha en que la familia de Jacob llegó a Egipto - ver en línea del tiempo) podemos retroceder y fijar la fecha para todos los patriarcas."
+	description: "<p>Si aceptamos el año 1446 a.C. como la fecha del éxodo, podemos ir retrocediendo en la línea del tiempo para ir llenando la historia de los patriarcas. <p>La Biblia afirma que Jacob tenía 130 años cuando entró en Egipto (Gn 47:9, 28). José tenía 39 años (30 años, más 7 años, más 2 años, según Gn 41:16-47; 45:6). Con la fecha de 1867 (fecha en que la familia de Jacob llegó a Egipto - ver en línea del tiempo) podemos retroceder y fijar la fecha para todos los patriarcas."
 }
 
 $(document).ready(function(){	
