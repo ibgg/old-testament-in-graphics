@@ -27,8 +27,8 @@ var initTimelines = function(){
 			var israelTimeline = new BibleTimelineEvents(israelData, 'timeline_israel_delivery', 'card_title_israel_delivery', 'LÍNEA DE TIEMPO DE LOS EVENTOS DE ISRAEL HASTA EL ÉXODO', itemStyle, undefined, "_israel_delivery", "box");
 			israelTimeline.drawBoxTimeline();
 			
-			pharaohsTimeline.initializeControlsEvents(israelTimeline.getTimeline());
-			israelTimeline.initializeControlsEvents(pharaohsTimeline.getTimeline());
+			pharaohsTimeline.initializeControlsEvents(israelTimeline);
+			israelTimeline.initializeControlsEvents(pharaohsTimeline);
 
 			pharaohsTimeline.onSynhronizedRangeChange(israelTimeline.getTimeline(), israelTimeline.getData(), israelTimeline.getPostfix());
 			israelTimeline.onSynhronizedRangeChange(pharaohsTimeline.getTimeline(), pharaohsTimeline.getData(), pharaohsTimeline.getPostfix());

@@ -52,7 +52,7 @@ function animateCancel () {
 }
 
 // Actualiza el popup de un conjunto de datos
-function updatePopupOnTimelineChange(timeline, data, postfix){
+function updatePopupOnTimelineChange(timeline, data, postfix, start, end){
 	var range = timeline.getVisibleChartRange();
 
 	for (var i = 0; i < data.length; i++){
@@ -76,29 +76,13 @@ function updatePopupOnTimelineChange(timeline, data, postfix){
 	}
 }
 
-
-/********* Buttons events **********/
-function adjustVisibleTimeRangeToAccommodateAllEvents(timeline, data, postfix) {
-	timeline.setVisibleChartRangeAuto();
+function adjustVisibleTimeRangeToAccommodateAllEvents(timeline, data, postfix, start, end) {
+	if (start != undefined && end != undefined)
+		timeline.setVisibleChartRange(start, end, true);
+	else
+		timeline.setVisibleChartRangeAuto();
 
 	updatePopupOnTimelineChange(timeline, data, postfix);
-}
-
-function zoomTimeline(timeline, zoomVal) {
-	timeline.zoom(zoomVal);
-	timeline.trigger("rangechange");
-	timeline.trigger("rangechanged");
-}
-
-function getSelectedRow(timeline) {
-	var row = undefined;
-	var sel = timeline.getSelection();
-	if (sel.length) {
-		if (sel[0].row != undefined) {
-			row = sel[0].row;
-		}
-	}
-	return row;
 }
 
 var getPeriod = function (start_date, end_date){

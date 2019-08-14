@@ -1,12 +1,12 @@
 [
     {
-        "description": "Moisés vivió 40 años en el palacio real como hijo adoptivo de Hatshepsut, la hija de Tutmés I",
+        "description": "Moisés nació en el 1526 a.C., vivió cuarenta años en el palacio real como hijo adoptivo de Hatshepsut, la hija de Tutmés I. Creció en las cortes de los faraones: Tumnosis I, II y la reina Hatsepsut",
         "event_name": "Nacimiento de Moisés",
         "start_date": "-001526-01-01T06:57:40.000Z"
     },
     {
         "biblical_quote": "Hechos 7:23",
-        "description": "En el año 1486 a.C. (1526 a.C. menos 40 años) huyó al desierto.",
+        "description": "En el año 1486 a.C. (1526 a.C. menos 40 años) huyó al desierto y estuvo bajo exilio autoimpuesto en tierras madianitas durante el reinado de Tumnosis III durante cuarenta años",
         "event_name": "Moisés huye al desierto",
         "start_date": "-001486-01-01T06:57:40.000Z"
     },
@@ -17,8 +17,8 @@
         "start_date": "-001446-01-01T06:57:40.000Z"
     },
     {
-        "description": "Acampan en la rivera oriental.",
-        "event_name": "Acampan en la rivera oriental",
+        "description": "Moisés tenía 120 años de edad cuando murió en el monte Nebo(Dt 34:7), mientras el pueblo acampaba en la rivera oriental en la rivera oriental.",
+        "event_name": "Muerte de Moisés",
         "start_date": "-001406-01-01T06:57:40.000Z"
     },
     {

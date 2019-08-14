@@ -67,8 +67,8 @@ var initTimelines = function(){
 			);
 			judahTimeline.drawRangeTimeline();
 
-			israelTimeline.initializeControlsEvents(judahTimeline.getTimeline());
-			judahTimeline.initializeControlsEvents(israelTimeline.getTimeline());
+			israelTimeline.initializeControlsEvents(judahTimeline);
+			judahTimeline.initializeControlsEvents(israelTimeline);
 			
 			israelTimeline.onSynhronizedRangeChange(judahTimeline.getTimeline(), judahTimeline.getData(), judahTimeline.getPostfix());
 			judahTimeline.onSynhronizedRangeChange(israelTimeline.getTimeline(), israelTimeline.getData(), israelTimeline.getPostfix());

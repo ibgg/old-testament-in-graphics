@@ -702,6 +702,7 @@ links.Timeline.prototype.setSize = function(width, height) {
  *                           directly redrawn
  */
 links.Timeline.prototype.setVisibleChartRange = function(start, end, redraw) {
+	
     var range = {};
     if (!start || !end) {
         // retrieve the date range of the items
@@ -5395,7 +5396,7 @@ links.Timeline.prototype.finalItemsPosition = function(items, groupBase, group) 
     // initialize final positions and fill finalItems
     groupFinalItems = this.initialItemsPosition(items, groupBase);
 
-    // calculate new, non-overlapping positions
+    // calculate new, non-overlapping positions holmes
     for (i = 0, iMax = groupFinalItems.length; i < iMax; i++) {
         var finalItem = groupFinalItems[i];
         var collidingItem = null;
@@ -6735,7 +6736,7 @@ links.Timeline.addEventListener = function (element, action, listener, useCaptur
             action = "DOMMouseScroll";  // For Firefox
         }
 
-        element.addEventListener(action, listener, useCapture);
+        element.addEventListener(action, listener, {passive: false}); // holmes
     } else {
         element.attachEvent("on" + action, listener);  // IE browsers
     }

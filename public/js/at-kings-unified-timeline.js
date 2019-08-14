@@ -30,9 +30,15 @@ var initTimelines = function(){
 			"_unified_kingdom", 
 			"range");
 		
+		var startVisibleRange = new Date("-001050-01-01T06:57:40.000Z");
+		var endVisibleRange = new Date("-000900-01-01T06:57:40.000Z");
 		unifiedKingomTimeline.drawRangeTimeline();
+		unifiedKingomTimeline.setStartTimelineView(startVisibleRange);
+		unifiedKingomTimeline.setEndTimelineView(endVisibleRange);
+		
 		unifiedKingomTimeline.initializeControlsEvents(undefined);
 		unifiedKingomTimeline.onRangeChange();
 		unifiedKingomTimeline.onItemSelected();
+		adjustVisibleTimeRangeToAccommodateAllEvents(unifiedKingomTimeline.getTimeline(), unifiedKingomTimeline.getData(), unifiedKingomTimeline.getPostfix(), startVisibleRange, endVisibleRange);
 	});
 }

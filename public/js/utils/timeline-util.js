@@ -16,6 +16,26 @@ class BibleTimelineEvents{
 			"locale": "es"
 		};
 		this.options.itemType = itemType;
+		this.startTimelineView;
+		this.endTimelineView;
+		this.zoomInFactor = 0.4;
+		this.zoomOutFactor = -0.4;
+	}
+
+	setStartTimelineView(startTimelineView){
+		this.startTimelineView = startTimelineView;
+	}
+
+	setEndTimelineView(endTimelineView){
+		this.endTimelineView = endTimelineView;
+	}
+
+	getStartTimelineView(){
+		return this.startTimelineView;
+	}
+
+	getEndTimelineView(){
+		return this.endTimelineView;
 	}
 
 	setTimelineData(data){
@@ -65,7 +85,7 @@ class BibleTimelineEvents{
 	onItemSelected(style){
 		var self = this;
 		google.visualization.events.addListener(self.timeline, 'select', function(){
-			var row = getSelectedRow(self.timeline);
+			var row = self.getSelectedRow();
 			self.onTimelineItemSelected(row, style);
 		});
 	}
@@ -130,20 +150,20 @@ class BibleTimelineEvents{
 		$('#adjust_view'+this.postfix).on('click', function (e){
 			e.preventDefault();
 	
-			adjustVisibleTimeRangeToAccommodateAllEvents(self.timeline, self.data, self.postfix);
+			adjustVisibleTimeRangeToAccommodateAllEvents(self.timeline, self.data, self.postfix, self.startTimelineView, self.endTimelineView);
 			var range = self.timeline.getVisibleChartRange();
 			if (timeline2)
-				timeline2.setVisibleChartRange(range.start, range.end);
+				timeline2.getTimeline().setVisibleChartRange(range.start, range.end);
 		});
 		
 		$('#zoom_in'+this.postfix).on('click', function (e){
 			e.preventDefault();
-			zoomTimeline(self.timeline, 0.4);
+			self.zoomTimeline(self.zoomInFactor);
 		});
 		
 		$('#zoom_out'+this.postfix).on('click', function (e){
 			e.preventDefault();
-			zoomTimeline(self.timeline, -0.4);
+			self.zoomTimeline(self.zoomOutFactor);
 		});
 	}
 
@@ -235,8 +255,27 @@ class BibleTimelineEvents{
 
 				animateTo(new Date(self.data[self.searchIndex].start_date), self.timeline, self.searchIndex);
 				if (timeline2 != undefined) animateTo(new Date(self.data[self.searchIndex].start_date), timeline2.getTimeline(), -1);
+				break;
 			}
 			count++;
 		}
+	}
+
+	zoomTimeline(zoomVal) {
+		this.timeline.zoom(zoomVal);
+		this.timeline.trigger("rangechange");
+		this.timeline.trigger("rangechanged");
+	}	
+
+
+	getSelectedRow() {
+		var row = undefined;
+		var sel = this.timeline.getSelection();
+		if (sel.length) {
+			if (sel[0].row != undefined) {
+				row = sel[0].row;
+			}
+		}
+		return row;
 	}
 }
