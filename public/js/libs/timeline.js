@@ -5438,14 +5438,16 @@ links.Timeline.prototype.finalItemsPosition = function(items, groupBase, group) 
 links.Timeline.prototype.initialItemsPosition = function(items, groupBase) {
     var options = this.options,
         axisOnTop = options.axisOnTop,
-        finalItems = [];
+		finalItems = [];
+	var margin = 10;
 
     for (var i = 0, iMax = items.length; i < iMax; ++i) {
         var item = items[i],
             top,
             bottom,
-            height = item.height,
-            width = item.getWidth(this),
+			height = item.height,
+			//width = item.getWidth(this),
+            width = item.dom.childNodes[0].clientWidth > item.getWidth(this) ? item.dom.childNodes[0].clientWidth + margin: item.getWidth(this),		// Holmes
             right = item.getRight(this),
             left = right - width;
 
