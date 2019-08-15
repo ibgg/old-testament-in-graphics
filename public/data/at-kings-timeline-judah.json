@@ -1,7 +1,7 @@
 [
     {
         "biblical_quote": "1 R 11:42-14:31; 2 Cr 10:1-12:16",
-        "description": "17 años. Roboam comenzó su gobierno en el año 931 a.C., 17 años antes que Abiam (914 a.C. más 17 años). Comenzó a reinar sobre Judah el mismo año en que su rival Jeroboam tomó Israel; y el reino se dividió. Esta fecha tambiém debe haber sido la del año en que murió Sansón",
+        "description": "17 años. Roboam comenzó su gobierno en el año 931 a.C., 17 años antes que Abiam (914 a.C. más 17 años). Comenzó a reinar sobre Judah el mismo año en que su rival Jeroboam tomó Israel; y el reino se dividió. Esta fecha también debe haber sido la del año en que murió Sansón",
         "end_date": "-000914-01-01T06:57:40.000Z",
         "event_name": "Roboam",
         "start_date": "-000931-01-01T06:57:40.000Z"
@@ -43,7 +43,7 @@
     },
     {
         "biblical_quote": "2 R 11:1-20; 2 Cr 22:1-23:21",
-        "description": "7 años (6 años). Esta fue la esposa de Joram, y la hija de Jezabel de Israel. Cuando vio que Jehú había matado a su hijo Ocozías, mandó ejecutar a todos los herederos reales, con el objetivo de llegar al trono. (Sin embargo, algunos de los seguidores fieles a Ocozías lograron salvar al hijo del rey, de nombre Joás, y mantenerlo oculto.) Atalía llegó al trono en el anno 841 a.C. y reinó durante siete años de no-ascensión, que equivalen a seis años. Su reinado terminó en el año 835 a.C. (841 a.C. menos 6 años).",
+        "description": "7 años (6 años). Esta fue la esposa de Joram, y la hija de Jezabel de Israel. Cuando vio que Jehú había matado a su hijo Ocozías, mandó ejecutar a todos los herederos reales, con el objetivo de llegar al trono. (Sin embargo, algunos de los seguidores fieles a Ocozías lograron salvar al hijo del rey, de nombre Joás, y mantenerlo oculto.) Atalía llegó al trono en el año 841 a.C. y reinó durante siete años de no-ascensión, que equivalen a seis años. Su reinado terminó en el año 835 a.C. (841 a.C. menos 6 años).",
         "end_date": "-000835-01-01T06:57:40.000Z",
         "event_name": "Atalía",
         "start_date": "-000841-01-01T06:57:40.000Z"
@@ -57,7 +57,7 @@
     },
     {
         "biblical_quote": "2 R 4:1-20; 2 Cr 25:1-28",
-        "description": "29 años. En esta época, Judá ya había vuelto a la cronología de la ascensión. Amasías subió al trono al derrocar a Joás en el año 796 a.C., y reinó durante 29 años, hasta el año 767 a.C. La Biblia nos dice que reinó 15 años después de la muerte de Joás de Israel, es decir, hasta el año 782 a.C. menos 15 años, osea el año 767 a.C. (2 R 14:17).",
+        "description": "29 años. En esta época, Judá ya había vuelto a la cronología de la ascensión. Amasías subió al trono al derrocar a Joás en el año 796 a.C., y reinó durante 29 años, hasta el año 767 a.C. La Biblia nos dice que reinó 15 años después de la muerte de Joás de Israel, es decir, hasta el año 782 a.C. menos 15 años, es decir el año 767 a.C. (2 R 14:17).",
         "end_date": "-000767-01-01T06:57:40.000Z",
         "event_name": "Amasías",
         "start_date": "-000796-01-01T06:57:40.000Z"
@@ -141,7 +141,7 @@
     },
     {
         "biblical_quote": "2 R 25:22-26",
-        "description": "7 meses. Gedalías asumió el gobierno en el año 17 del reinado de Nabucodonosor, lo cual confirma su ascenso al trono en el año 586 a.C. (2 R 25:22). Se nota que Nabucodonosor tuvoque aplastar un nuevo levantamiento en Judá, debido a que parte del pueblo se negaba a aceptar que Judá hubiera llegado a su fin como nación. Esto tuvo lugar en el año 23 del reinado de Nabucodonosor, es decir, en el año 582 a.C. (cf. Jer 52:30).",
+        "description": "7 meses. Gedalías asumió el gobierno en el año 17 del reinado de Nabucodonosor, lo cual confirma su ascenso al trono en el año 586 a.C. (2 R 25:22). Se nota que Nabucodonosor tuvo que aplastar un nuevo levantamiento en Judá, debido a que parte del pueblo se negaba a aceptar que Judá hubiera llegado a su fin como nación. Esto tuvo lugar en el año 23 del reinado de Nabucodonosor, es decir, en el año 582 a.C. (cf. Jer 52:30).",
         "end_date": "-000586-08-01T06:57:40.000Z",
         "event_name": "Gedalías",
         "start_date": "-000586-01-01T06:57:40.000Z"
