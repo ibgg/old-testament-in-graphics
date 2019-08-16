@@ -93,18 +93,18 @@ class BibleTimelineEvents{
 	onTimelineItemSelected (row, classname){
 		var self = this;
 		if (row != undefined) {
-			$('#'+self.data[row].event_name.replace(/ /g,'')+self.postfix).popover('toggle');
-			$('#'+self.data[row].event_name.replace(/ /g,'')+self.postfix).popover('update');
-			$('#'+self.data[row].event_name.replace(/ /g,'')+self.postfix).toggleClass('alert-danger');
-			$('#close_'+self.data[row].event_name.replace(/ /g,'')+self.postfix).on('click', function (e){
+			$('#'+self.data[row].event_name.replace(/ /g,'').replace(',','')+self.postfix).popover('toggle');
+			$('#'+self.data[row].event_name.replace(/ /g,'').replace(',','')+self.postfix).popover('update');
+			$('#'+self.data[row].event_name.replace(/ /g,'').replace(',','')+self.postfix).toggleClass('alert-danger');
+			$('#close_'+self.data[row].event_name.replace(/ /g,'').replace(',','')+self.postfix).on('click', function (e){
 				self.timeline.selectItem(row);
 				google.visualization.events.trigger(self.timeline, 'select', {});
 			});
 		}else{
 			for (var i = 0; i < self.data.length; i++){
-				$('#'+self.data[i].event_name.replace(/ /g,'')+self.postfix).popover('hide');
-				$('#'+self.data[i].event_name.replace(/ /g,'')+self.postfix).removeClass('alert-danger');
-				$('#'+self.data[i].event_name.replace(/ /g,'')+self.postfix).addClass(classname);
+				$('#'+self.data[i].event_name.replace(/ /g,'').replace(',','')+self.postfix).popover('hide');
+				$('#'+self.data[i].event_name.replace(/ /g,'').replace(',','')+self.postfix).removeClass('alert-danger');
+				$('#'+self.data[i].event_name.replace(/ /g,'').replace(',','')+self.postfix).addClass(classname);
 			}
 		}
 	}
@@ -181,9 +181,9 @@ class BibleTimelineEvents{
 					self.eventStyle.format(
 						element.event_name.length > 18 ? element.event_name.substring(0,18)+"..." : element.event_name, 
 						Math.abs(startDate.getFullYear()) + " a.C.",
-						"close_"+element.event_name.replace(/ /g,'')+self.postfix,
+						"close_"+element.event_name.replace(/ /g,'').replace(',','')+self.postfix,
 						element.description, 
-						element.event_name.replace(/ /g,'')+self.postfix, 
+						element.event_name.replace(/ /g,'').replace(',','')+self.postfix, 
 						element.event_name), 
 					'no-border'
 			]);
@@ -222,15 +222,15 @@ class BibleTimelineEvents{
 					self.eventStyle.format(
 						element.event_name + ' - '+element.biblical_quote, 
 						element.description, 
-						element.event_name.replace(/ /g,'')+self.postfix,
+						element.event_name.replace(/ /g,'').replace(',','')+self.postfix,
 						element.event_name), 
 					self.rangeStyle.format(
 						element.event_name.length > 18 ? element.event_name.substring(0,18)+"..." : element.event_name, 
 						startDate != undefined ? startDate.getFullYear() : '', 
 						endDate != undefined ? endDate.getFullYear() : '', 
-						"close_"+element.event_name.replace(/ /g,'')+self.postfix,
+						"close_"+element.event_name.replace(/ /g,'').replace(',','')+self.postfix,
 						popOverDescription, 
-						element.event_name.replace(/ /g,'')+self.postfix),
+						element.event_name.replace(/ /g,'').replace(',','')+self.postfix),
 					type
 					]);		
 		});	

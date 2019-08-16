@@ -304,3 +304,34 @@ div.timeline-event-box.no-border {
 hr.dotted {
 	border-top: 1px dotted #8c8b8b;
 }
+
+.pointer {
+	cursor: pointer
+}
+
+.even {
+	background-color: #f8f9fc;
+	/*font-size: 0.95rem;*/
+}
+
+th {
+	background-color: #f8f9fc;
+	color: #4e73df
+}
+
+.table-bordered {
+	border-color:1px solid #e3e6f0;
+}
+
+.table-bordered td {
+	border-color: #4e73df;
+}
+
+.table-bordered td,
+.table-bordered th  {
+    border: 0px solid #e3e6f0;
+}
+
+td, .table-bordered thead th {
+    border-bottom-width: 1px;
+}

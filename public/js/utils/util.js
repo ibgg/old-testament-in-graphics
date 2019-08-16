@@ -62,16 +62,16 @@ function updatePopupOnTimelineChange(timeline, data, postfix, start, end){
 		var item_end =   timeline.getItem(i).start != undefined ? Math.abs(timeline.getItem(i).start.getTime()) : Math.abs(timeline.getItem(i).end.getTime());
 	
 		if ((item_start > timeline_start && item_end > timeline_start) || (item_start < timeline_end && item_end < timeline_end)) {
-			$('#'+data[i].event_name.replace(/ /g,'')+postfix).popover('hide');
+			$('#'+data[i].event_name.replace(/ /g,'').replace(',','')+postfix).popover('hide');
 		}else{
-			if ($('#'+data[i].event_name.replace(/ /g,'')+postfix).hasClass("alert-danger")){
-				$('#'+data[i].event_name.replace(/ /g,'')+postfix).popover('show');
-				$('#close_'+data[i].event_name.replace(/ /g,'')+postfix).on('click', function (e){
+			if ($('#'+data[i].event_name.replace(/ /g,'').replace(',','')+postfix).hasClass("alert-danger")){
+				$('#'+data[i].event_name.replace(/ /g,'').replace(',','')+postfix).popover('show');
+				$('#close_'+data[i].event_name.replace(/ /g,'').replace(',','')+postfix).on('click', function (e){
 					timeline.selectItem(i);
 					google.visualization.events.trigger(timeline, 'select', {});
 				});	
 			}
-			$('#'+data[i].event_name.replace(/ /g,'')+postfix).popover('update');
+			$('#'+data[i].event_name.replace(/ /g,'').replace(',','')+postfix).popover('update');
 		}	
 	}
 }

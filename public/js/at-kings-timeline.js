@@ -32,7 +32,7 @@ var addDataToTable = function (data, postfix){
 		var period = getPeriod(new Date(data[i].start_date), new Date(data[i].end_date));
 		var row = [ data[i].event_name, period , data[i].biblical_quote];
 
-		$('#dataTable'+postfix).DataTable().row.add(row).draw();	
+		$('#dataTable'+postfix).DataTable().row.add(row).draw().nodes().to$().addClass('pointer');
 	}
 }
 
