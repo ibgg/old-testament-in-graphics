@@ -340,3 +340,21 @@ table.table-hover tr:hover {
 	background-color: rgb(235, 246, 255);
 	color: #4e73df
 }
+
+.family-tree-item {
+	color: #1c606a;
+	background-color: #d7f1f5;
+	border-color: #c7ebf1;
+	border: 1px solid transparent;
+    border-radius: .25rem;
+	cursor: pointer;
+}
+
+.family-tree-item-selected {
+    color: #78261f;
+    background-color: #fadbd8;
+	border-color: #f8ccc8;
+	border: 1px solid transparent;
+    border-radius: .25rem;
+	cursor: pointer;
+}

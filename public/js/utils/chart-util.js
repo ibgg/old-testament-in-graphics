@@ -32,7 +32,7 @@ var drawFamilyTree = function(familyDataTree, div){
 		theme: 'material',
 		allowHtml:true, 
 		allowCollapse: true, 
-		nodeClass: "alert alert-info", 
-		selectedNodeClass: "alert-danger"
+		nodeClass: "family-tree-item", 
+		selectedNodeClass: "family-tree-item-selected"
 	});  
 }
