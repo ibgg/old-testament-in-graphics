@@ -261,6 +261,12 @@ class BibleTimelineEvents{
 		}
 	}
 
+	goToEvent(index, timeline2){
+		var self = this;
+		animateTo(new Date(self.data[index].start_date), self.timeline, index);
+		if (timeline2 != undefined) animateTo(new Date(self.data[index].start_date), timeline2.getTimeline(), -1);
+	}
+
 	zoomTimeline(zoomVal) {
 		this.timeline.zoom(zoomVal);
 		this.timeline.trigger("rangechange");

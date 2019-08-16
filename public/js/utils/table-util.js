@@ -25,7 +25,7 @@ var setupTable = function (postfix, timeline1, timeline2, config){
 	if (timeline1 != null && timeline1 != undefined && timeline2 != null && timeline2 != undefined){
 		table.on('select', function (e, dt, type, indexes){
 			if (type === 'row'){
-				timeline1.searchEvent((timeline1.getData()[indexes]).event_name, timeline2);
+				timeline1.goToEvent(indexes, timeline2);
 	
 				window.scroll({
 				  top: israel_kings_card_title_position,
