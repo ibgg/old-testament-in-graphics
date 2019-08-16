@@ -5436,10 +5436,10 @@ links.Timeline.prototype.finalItemsPosition = function(items, groupBase, group) 
 };
 
 links.Timeline.prototype.initialItemsPosition = function(items, groupBase) {
+	//console.log(items);
     var options = this.options,
         axisOnTop = options.axisOnTop,
 		finalItems = [];
-	var margin = 10;
 
     for (var i = 0, iMax = items.length; i < iMax; ++i) {
         var item = items[i],
@@ -5447,9 +5447,9 @@ links.Timeline.prototype.initialItemsPosition = function(items, groupBase) {
             bottom,
 			height = item.height,
 			//width = item.getWidth(this),
-            width = item.dom.childNodes[0].clientWidth > item.getWidth(this) ? item.dom.childNodes[0].clientWidth + margin: item.getWidth(this),		// Holmes
-            right = item.getRight(this),
-            left = right - width;
+            width = item.dom.childNodes[0].clientWidth > item.getWidth(this) ? item.dom.childNodes[0].clientWidth: item.getWidth(this),		// Holmes
+            right = item.dom.childNodes[0].clientWidth > item.getWidth(this) ? item.getRight(this) + item.dom.childNodes[0].clientWidth - item.getWidth(this) : item.getRight(this),
+			left = right - width;
 
         top = (axisOnTop) ? groupBase
                           : groupBase - height;
