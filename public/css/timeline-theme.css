@@ -335,3 +335,8 @@ th {
 td, .table-bordered thead th {
     border-bottom-width: 1px;
 }
+
+table.table-hover tr:hover {
+	background-color: rgb(235, 246, 255);
+	color: #4e73df
+}
