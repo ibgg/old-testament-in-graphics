@@ -6,7 +6,8 @@ var setupTable = function (postfix, timeline1, timeline2, config){
 		ordering:false,
 		select: true,
 		"language": {
-			"url": "data/spanish.json"
+			"url": "data/spanish.json",
+			"searchPlaceholder": "Buscar por nombre"
 		}
 	}
 	if (config != undefined){
@@ -34,7 +35,7 @@ var setupTable = function (postfix, timeline1, timeline2, config){
 			}
 		});	
 	}
-	
+	console.log($('.dataTables_filter'));
 	/*
 	for (var i = 0; i< data.length; i++){
 		var period = getPeriod(new Date(data[i].start_date), new Date(data[i].end_date));
