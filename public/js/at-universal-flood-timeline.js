@@ -118,7 +118,7 @@ var initTimelines = function(){
 		var eventStyle = '<div class="h6 mb-0 timeline-label">{3}</div>';
 		var rangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
 
-		var universalFloodTimeline = new BibleTimelineEvents(universalFloodData, 'timeline_universal_flood', 'card_title_universal_flood',"LÍNEA DEL TIEMPO DESDE LA CREACIÓN HASTA EL DILUVIO ",eventStyle, rangeStyle, "_universal_flood", "box");
+		var universalFloodTimeline = new BibleTimelineEvents(universalFloodData, 'timeline_universal_flood', 'card_title_universal_flood',"LÍNEA DEL TIEMPO DESDE EL DILUVIO HASTA ABRAHAM ",eventStyle, rangeStyle, "_universal_flood", "box");
 		universalFloodTimeline.drawRangeTimeline();
 		universalFloodTimeline.initializeControlsEvents(undefined);
 		universalFloodTimeline.onRangeChange();

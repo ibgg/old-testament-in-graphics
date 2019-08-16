@@ -358,3 +358,8 @@ table.table-hover tr:hover {
     border-radius: .25rem;
 	cursor: pointer;
 }
+
+div.timeline-axis-grid {
+    border-left-style: dotted;
+    border-width: 1px;
+}
