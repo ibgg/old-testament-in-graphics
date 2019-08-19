@@ -128,3 +128,7 @@ function loadJSONData(jsonFile){
 		}
 	 }	 
  }
+
+ function onToggleSideBar(){
+	 console.log("Toggle")
+ }

@@ -30,5 +30,9 @@ var initTimelines = function(){
 		setupTable(judgesTimeline.getPostfix(), judgesTimeline, undefined, {ordering: false, select: true, searching: false, paging: false});
 		//setupTable(judgesTimeline.getPostfix(), judgesTimeline.getData(), judgesTimeline.getTimeline(), undefined, {ordering: false, select: true, searching: false, paging: false});
 		addDataToTable(judgesTimeline.getData(), judgesTimeline.getPostfix());
+
+		$('#sidebarToggle').on('click', function (){
+			judgesTimeline.getTimeline().redraw();
+		});
 	});
 }

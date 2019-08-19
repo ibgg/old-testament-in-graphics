@@ -35,6 +35,11 @@ var initTimelines = function(){
 
 			pharaohsTimeline.onItemSelected();
 			israelTimeline.onItemSelected();
+
+			$('#sidebarToggle').on('click', function (){
+				pharaohsTimeline.getTimeline().redraw();
+				israelTimeline.getTimeline().redraw()
+			});
 		});
 	});
 }

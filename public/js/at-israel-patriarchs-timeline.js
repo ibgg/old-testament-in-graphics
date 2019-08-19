@@ -26,5 +26,9 @@ var initTimelines = function(){
 		patriarchsTimeline.initializeControlsEvents(undefined);
 		patriarchsTimeline.onRangeChange();
 		patriarchsTimeline.onItemSelected();
+
+		$('#sidebarToggle').on('click', function (){
+			patriarchsTimeline.getTimeline().redraw();
+		});
 	});
 }

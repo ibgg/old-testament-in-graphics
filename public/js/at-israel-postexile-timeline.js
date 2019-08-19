@@ -31,5 +31,9 @@ var initTimelines = function(){
 		postExileTimeline.initializeControlsEvents(undefined);
 		postExileTimeline.onRangeChange();
 		postExileTimeline.onItemSelected();
+
+		$('#sidebarToggle').on('click', function (){
+			postExileTimeline.getTimeline().redraw();
+		});
 	});
 }

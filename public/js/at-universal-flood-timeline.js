@@ -125,5 +125,9 @@ var initTimelines = function(){
 		universalFloodTimeline.onItemSelected();
 		
 		populateFamilytree(universalFloodTimeline.getData());
+
+		$('#sidebarToggle').on('click', function (){
+			universalFloodTimeline.getTimeline().redraw();
+		});
 	});
 }

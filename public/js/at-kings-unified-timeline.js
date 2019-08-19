@@ -40,5 +40,9 @@ var initTimelines = function(){
 		unifiedKingomTimeline.onRangeChange();
 		unifiedKingomTimeline.onItemSelected();
 		adjustVisibleTimeRangeToAccommodateAllEvents(unifiedKingomTimeline.getTimeline(), unifiedKingomTimeline.getData(), unifiedKingomTimeline.getPostfix(), startVisibleRange, endVisibleRange);
+
+		$('#sidebarToggle').on('click', function (){
+			unifiedKingomTimeline.getTimeline().redraw();
+		});
 	});
 }
