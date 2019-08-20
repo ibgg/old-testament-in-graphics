@@ -12,6 +12,7 @@ var addDataToTable = function(data, postfix){
 		var row = [ data[i].description, data[i].biblical_quote != undefined ? data[i].biblical_quote : "", +Math.abs(startDate.getFullYear()) + " - " + Math.abs(endDate.getFullYear()) +" a.C."];
 		$('#dataTable'+postfix).DataTable().row.add(row).draw();	
 	}
+	$("#spinner_table"+postfix).remove();
 }
 
 var initTimelines = function(){

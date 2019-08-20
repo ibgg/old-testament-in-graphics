@@ -246,7 +246,7 @@ class BibleTimelineEvents{
 						popOverDescription, 
 						element.event_name.replace(/ /g,'').replace(',','')+self.postfix) : undefined, 
 						'no-border'
-					]);		
+					]);
 		});	
 
 		this.timeline = new links.Timeline(document.getElementById(this.contentDiv), this.options);
@@ -254,6 +254,7 @@ class BibleTimelineEvents{
 		this.timeline.draw(this.dataTable);
 	
 		document.getElementById(this.titleDiv).innerHTML = this.timelineTitle + " - (" + this.data.length + ")";
+		$("#spinner"+this.postfix).remove();
 	}
 
 	drawBoxTimeline(){
