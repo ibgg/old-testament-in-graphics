@@ -74,11 +74,11 @@ function populateFamilytree(data) {
 var initTimelines = function(){
 	loadJSONData("data/at-creation-data.json").then(function (creationData){
 		creationData = JSON.parse(creationData);
-		var eventStyle = '<div class="h6 mb-0 timeline-label">{3}</div>';
+		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
 		var rangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
 
 		var creationTimeline = new BibleTimelineEvents(creationData, 'timeline_creation', 'card_title_creation',"LÍNEA DEL TIEMPO DESDE LA CREACIÓN HASTA EL DILUVIO ",eventStyle, rangeStyle, "_creation", "box")
-		creationTimeline.drawRangeTimeline();
+		creationTimeline.drawTimeline();
 
 		creationTimeline.initializeControlsEvents(undefined);
 		

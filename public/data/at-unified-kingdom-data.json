@@ -4,41 +4,53 @@
         "description": "El libro de Jueces abarca un periodo de unos 337 años, del año 13800 al 1043. El periodo que gobernaron los jueces, y el que pasaron bajo opresión en Egipto, suman en total 410 años. Como Pablo dice que los jueves gobernaron por un lapso aproximado de 450 años (Hechos 13:20), es posible que algunos de los jueces se hayan superpuesto unos a otros en su gobierno.",
         "end_date": "-001043-01-01T06:57:40.000Z",
 		"event_name": "Los jueces",
-		"start_date": "-001380-01-01T06:57:40.000Z"
+		"start_date": "-001380-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "unified_kingdom"
     },
     {
         "biblical_quote": "Hechos 13:21",
         "description": "Saúl, que murió en el año 1011 a.C., también tuvo un reinado prolongado; se nos dice que gobernó durante 40 años (Hebros 13:21). (Algo debió quedar omitido del texto hebreo de 1 S 13:1. No es posible que la fecha total haya sido &quot;dos años&quot;.) Sin embargo, podría ser que la fecha antes mencionada (40 años) incluya tanto el reinado de Saúl como el de su hijo Is-boset. Si fuera así, esto dejaría un total de 33 años para el reinado de Saúl solo, lo cual significa que habría comenzado a reinar en el año 1043 a.C. y no en el 1057 a.C.",
         "end_date": "-001011-01-01T06:57:40.000Z",
         "event_name": "Saúl",
-        "start_date": "-001043-01-01T06:57:40.000Z"
+        "start_date": "-001043-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "unified_kingdom"
     },
     {
         "biblical_quote": "1 S 14:50,51",
         "description": "Abner, primo de Saúl y general de su ejercito (1 S 14:50,51), no deseaba seguir al nuevo rey ungido por el Señor, sino que puso a Is-boset en el trono, lo que fue causa de tensión entre judá y el resto de las tribus de Israel. Is-boset. Su nombre significa &quot;hombre de vergüenza&quot;. Este único hijo sobreviviente de Saúl fue entronizado como rey sobre las tribus del norte de Israel y sobre las orientales al otro lado del Jordán. Mahanaim. Una ciudad de Galaad al este del río Jordán. Is-boset se estableció allí y reinó en esta ciudad durante dos años. <p>Pasaron varios años antes de que Is-boset accediera al trono de Israel, de modo que el reinado de dos años de Is-boset terminó al final del reinado de siete años y seis meses sobre Judá. Is-boset debió necesitar de unos cinco años para recuperar el territorio del norte de manos de los filisteos. - MacArthur, John. Biblia De Estudio MacArthur. Nashville, TN: Grupo Nelson, 2012.",
         "end_date": "-001004-01-01T06:57:40.000Z",
         "event_name": "Is-boset y Abner",
-        "start_date": "-001011-01-01T06:57:40.000Z"
+        "start_date": "-001011-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "unified_kingdom"
     },
     {
         "biblical_quote": "1 R 2:11",
         "description": "40 años. David fue rey durante 40 años, lo cual coloca la fecha del comienzo de su reinado en el año 1011 a.C. Sin embargo, David solo reinó sobre Judá mientras Is-boset, hijo de Salúl, tuvo el resto de las tribus de su lado. En 1 R 2:11 y 2 S 2:11 se nos dice que David fue rey de Hebrón durante siete años y seis meses. Cuando los enemigos de Is-boset lo asesinaron, los líderes de las tribus de Israel se reunieron en Hebrón y ofrecieron alianza a David (2 S 5:3). Fue así como el rey David comenzó a reinar solo, en el año 1004 a.C., y gobernó durante 33 años",
         "end_date": "-000971-01-01T06:57:40.000Z",
         "event_name": "David",
-        "start_date": "-001011-01-01T06:57:40.000Z"
+        "start_date": "-001011-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "unified_kingdom"
     },
     {
         "biblical_quote": "1 R 11:42",
         "description": "40 años. La Biblia nos dice que Salomón reinó sobre todo Israel durante 40 años (1 R 11:42). De modo que en la línea del tiempo se coloca el comienzo del reinado de Salomón en el año 971 a.C. Esa sería la fecha de la muerte de David",
         "end_date": "-000931-01-01T06:57:40.000Z",
         "event_name": "Salomón",
-        "start_date": "-000971-01-01T06:57:40.000Z"
+        "start_date": "-000971-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "unified_kingdom"
     },
     {
         "biblical_quote": "1 R 1 - 2 R 25",
 		"description": "Después de Salomón, la suerte de Israel comenzó a decaer. La nación se volvió en contra de Dios y de sus mandamientos. Dios podría haber destruído a Israel; pero no lo hizo porque todavía tenía el propósito de usar la casa de David para traer al Redentor que habría de salvar al mundo de sus pecados. Había prometido levantar a este redentor de la familia de Abraham, y debía cumplir su promesa. <p>Cuando murió Salomón, Israel se enredó en una sangrienta guerra civil en la que los hijos de Salomón y los generales de su ejército se disputaban el trono. Roboam contaba con la bendición de su padre para hacerse rey; pero su rival Jeroboam ejercía mayor poder sobre los jefes militares del país. Al final, Roboam tomó autoridad sobre la región sur de aquella tierra y la llamó Judá. Jeroboam instaló su propio gobierno en la mitad septentrional y retuvo el nombre de Israel. Cada uno reclamaba para sí el haber sido el rey elegido por Dios.",
 		"end_date": "-000586-01-01T06:57:40.000Z",
         "event_name": "Israel y Judá",
-        "start_date": "-000931-01-01T06:57:40.000Z"
+        "start_date": "-000931-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "unified_kingdom"
     }
 ]

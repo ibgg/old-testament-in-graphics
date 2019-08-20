@@ -17,11 +17,11 @@ $(document).ready(function(){
 var initTimelines = function(){
 	loadJSONData("data/at-patriarchs-data.json").then(function (patriarchsData){
 		patriarchsData = JSON.parse(patriarchsData);
-		var eventStyle = '<div class="h6 mb-0 timeline-label">{3}</div>';
+		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
 		var rangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
 
 		var patriarchsTimeline = new BibleTimelineEvents(patriarchsData, 'timeline_patriarchs', 'card_title_patriarchs',"LÍNEA DEL TIEMPO DE LOS PATRIARCAS DE ISRAEL ",eventStyle, rangeStyle, "_patriarchs", "box");
-		patriarchsTimeline.drawRangeTimeline();
+		patriarchsTimeline.drawTimeline();
 
 		patriarchsTimeline.initializeControlsEvents(undefined);
 		patriarchsTimeline.onRangeChange();

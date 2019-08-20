@@ -15,17 +15,17 @@ $(document).ready(function(){
 var initTimelines = function(){
 	loadJSONData("data/at-pharaohs-data.json").then(function (pharaohsData){
 		pharaohsData = JSON.parse(pharaohsData);
-		var eventStyle = '<div class="h6 mb-0 timeline-label">{3}</div>';
+		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
 		var pharaohsRangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
 
 		var pharaohsTimeline = new BibleTimelineEvents(pharaohsData, 'timeline_pharaohs', 'card_title_pharaohs',"LÍNEA DEL TIEMPO DE FARAONES DE EGIPTO ",eventStyle, pharaohsRangeStyle, "_pharaohs", "box");
-		pharaohsTimeline.drawRangeTimeline();
+		pharaohsTimeline.drawTimeline();
 
 		loadJSONData("data/at-israel-delivery-data.json").then(function (israelData){
 			israelData = JSON.parse(israelData);
 			var itemStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{2}&quot;>&times;</a>" data-content="{3}" id="{4}" class = "timeline-box-label alert alert-success">{5}</div>';
 			var israelTimeline = new BibleTimelineEvents(israelData, 'timeline_israel_delivery', 'card_title_israel_delivery', 'LÍNEA DE TIEMPO DE LOS EVENTOS DE ISRAEL HASTA EL ÉXODO', itemStyle, undefined, "_israel_delivery", "box");
-			israelTimeline.drawBoxTimeline();
+			israelTimeline.drawTimeline();
 			
 			pharaohsTimeline.initializeControlsEvents(israelTimeline);
 			israelTimeline.initializeControlsEvents(pharaohsTimeline);

@@ -4,139 +4,179 @@
         "description": "22 años (21 años). El reinado de Jeroboam comenzó en el año 931 (910 a.C. más 21 años)",
         "end_date": "-000910-01-01T09:57:40.000Z",
         "event_name": "Jeroboam I",
-        "start_date": "-000931-01-01T09:57:40.000Z"
+        "start_date": "-000931-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "1 R 15:25-31",
         "description": "2 años (1 año). Baasa asesinó a Nadab para tomar el control de Israel, de modo que Nadab debió reinar de 910 a 909 a.C.",
         "end_date": "-000909-01-01T09:57:40.000Z",
         "event_name": "Nadab",
-        "start_date": "-000910-01-01T09:57:40.000Z"
+        "start_date": "-000910-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "1 R 15:27-16:7",
         "description": "24 años (23 años). Como sabemos que Ela tomó el trono en el año 886, sabemos que Baasa murió ese año, de modo que comenzo a reinar en el año 909 a.C. (886 a.C. más 21 años)",
         "end_date": "-000886-01-01T09:57:40.000Z",
         "event_name": "Baasa",
-        "start_date": "-000909-01-01T09:57:40.000Z"
+        "start_date": "-000909-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "1 R 16:6-14",
         "description": "2 años (1 año). Ela murió durante la revuelta de Zimri, del año 885, de modo que debió comenzar su reinado en el año 886 a.C.",
         "end_date": "-000885-01-01T09:57:40.000Z",
         "event_name": "Ela",
-        "start_date": "-000886-01-01T09:57:40.000Z"
+        "start_date": "-000886-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "1 R 16:9-20",
         "description": "7 días. Zimri mató a Ela, hijo de Baasa. A su vez, Omri depuso a Zimri (1 R 17:17, 18).",
         "end_date": "-000885-01-08T09:57:40.000Z",
         "event_name": "Zimri",
-        "start_date": "-000885-01-01T09:57:40.000Z"
+        "start_date": "-000885-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "1 R 16:15-28",
         "description": "12 años (11 años). Como sabemos que Acab comenzó su reinado en el año 885 a.C. (874 a.C. más 11 años).",
         "end_date": "-000874-01-01T09:57:40.000Z",
         "event_name": "Omri",
-        "start_date": "-000885-01-01T09:57:40.000Z"
+        "start_date": "-000885-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "1 R 16:28-22:40",
         "description": "22 años (21 años). Acab murió en el año 853, de modo que debió haber comenzado su reinado en el año 874 (853 a.C. más 21 años)",
         "end_date": "-000853-01-01T09:57:40.000Z",
         "event_name": "Acab",
-        "start_date": "-000874-01-01T09:57:40.000Z"
+        "start_date": "-000874-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "1 R 22:40 - 2 R 1:18",
         "description": "1 año. Ocozías empezó su reinado en el año undécimo del reinado de Joram (2 R 9:29). (La razón por la cual 2 R 8:25 declara que comenzó a reinar en el año 12 de Joram es que Judá había adoptado el sistema de fechamiento por no-ascensión usado por Israel, durante este periodo). Tanto Joram de Israel, como Ocozías de Jurá murieron en el año 841 a.C. (2 R 9:24,27); de modo que Ocozías probablemente reinó por unos pocos meses, aunque los registros de Israel dicen quereinón durante &quot;un año&quot;. (Recuerde que el método de fechamiento por no-ascensión que utilizaba Israel habría llamado a los primeros meses del reinado de Ocozías su &quot;primer año&quot;.)",
         "end_date": "-000852-01-01T09:57:40.000Z",
         "event_name": "Ocozías",
-        "start_date": "-000853-01-01T09:57:40.000Z"
+        "start_date": "-000853-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "2 R 3:1-9:25",
         "description": "12 años (11 años). Joram comenzó su reinado en el año 18 de Josafat; como reinó 11 años antes de Jehú, el primer año en que reinó solo fue en el año 852 a.C. (841 a.C. más 11 años)",
         "end_date": "-000841-01-01T09:57:40.000Z",
         "event_name": "Joram",
-        "start_date": "-000852-01-01T09:57:40.000Z"
+        "start_date": "-000852-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "1 R 16:21-24",
         "description": "No se nos dice cuánto tiempo vivió este rival de Omri. Podemos dar por sentado que comenzó su reinado al mismo tiempo que Omri, en el año 885; simplemente, reinaron en lugares diferentes de Israel. Sabemos que Omri reinó en Tirsa durante seis años (de hecho cinco), hasta el año 880. Luego se trasladó a Samaria y allí estableció su gobierno, lo cual significa que Tibni había muerto.",
         "end_date": "-000880-01-01T09:57:40.000Z",
         "event_name": "Tibni",
-        "start_date": "-000885-01-01T09:57:40.000Z"
+        "start_date": "-000885-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "2 R 9:1-10:36",
         "description": "28 años (27 años).  Este rey mató a Joram, su predecesor en Israel, y también a Ocozías, el rey de Judá. Como damos por sentado que Jehú comenzó su reinado en el año 841, su periodo debió terminar en el año 814 a.C. (841 a.C. menos 27 años).",
         "end_date": "-000814-01-01T09:57:40.000Z",
         "event_name": "Jehú",
-        "start_date": "-000841-01-01T09:57:40.000Z"
+        "start_date": "-000841-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "2 R 13:1-9",
         "description": "17 años (16 años). Joacaz comenzó su reinado cuando murió Jehú, en el año 814 a.C., y reinó durante 17 años de no-ascensión es decir, 16 años reales, hasta el año 798 a.C. (814 a.C. menos 16 años).",
         "end_date": "-000798-01-01T09:57:40.000Z",
         "event_name": "Joacaz",
-        "start_date": "-000814-01-01T09:57:40.000Z"
+        "start_date": "-000814-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "2 R 13:10-14:16",
         "description": "16 años. Israel parece haber adoptado desde esta ocasión hasta el final del reino la cronología de la ascensión. Joás comenzó su reinado en el año 798 a.C. y reinó hasta el año 781 a.C. (798 a.C. menos 16 años).",
         "end_date": "-000782-01-01T09:57:40.000Z",
         "event_name": "Joás",
-        "start_date": "-000798-01-01T09:57:40.000Z"
+        "start_date": "-000798-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "2 R 14:23-29",
         "description": "41 años. Si bien el reinado total de Jeroboam fue de 41 años, pareciera haber gobernado junto con Joás durante un tiempo. Su ascensión oficial al trono fue durante el año 15 del reinado de Amasías (781 a.C. menos 15 años). Azarías sucedió a su padre Amasías en el reino de Judá 14 años después (29 años menos 15), pero llegó al trono en el año 27 del reinado de Jeroboam (2 R 15:1, 2), 794 a.C. (767 a.C. más 27 años). De modo que debe haber habido una superposición de 13 años entre Jeroboam y su padre Joás. Esto significa que el reinado conjunto de Jeroboam y de Joás comenzó en el año 794 a.C., y que reinó por sí solo desde el año 781 a.C. (Aparentemente su gobierno oficial comenzó con el año nuevo, y que el calendario dice que Joás murió en el año 752 a.C.) Reinó hasta el año 753 a.C. (794 a.C. menos 41 años). Es probable que Joás estableciera un cogobierno con Jeroboam para proteger el trono de Israel, mientras él luchaba contra Amasías de Judá (2 R 14:8-11).",
         "end_date": "-000753-01-01T09:57:40.000Z",
         "event_name": "Jeroboam II",
-        "start_date": "-000794-01-01T09:57:40.000Z"
+        "start_date": "-000794-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "2 R 14:29-15:12",
         "description": "6 meses. El reinado de Zacarías se extendió desde el 753 hasta el 752 a.C., cuando fue asesinado.",
         "end_date": "-000752-01-01T09:57:40.000Z",
         "event_name": "Zacarías",
-        "start_date": "-000753-01-01T09:57:40.000Z"
+        "start_date": "-000753-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "2 R 15:10-16",
         "description": "1 mes. Salúm gobernó en el año 39 del reinado de Uzías, de modo que reinó y murió en el mismo año 752 a.C. (791 a.C., menos 39 años).",
         "end_date": "-000752-03-01T09:57:40.000Z",
         "event_name": "Salum",
-        "start_date": "-000752-01-01T09:57:40.000Z"
+        "start_date": "-000752-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "2 R 15:14-22",
         "description": "10 años. También inició su reinado en el año 39 del reinado de Uzías, es decir, en el año 752 a.C., y reinó durante 10 años, hasta el año 742 a.C.",
         "end_date": "-000742-01-01T09:57:40.000Z",
         "event_name": "Manahem",
-        "start_date": "-000752-01-01T09:57:40.000Z"
+        "start_date": "-000752-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "2 R 15:22-26",
         "description": "2 años. Comenzó a reinar en el año 742, y reinó hasta el año 740 a.C. (2 R 15:23 nos dice que Pekaía comenzó su reinado en el año 15 del rey Uzías, es decir, en el año 741 a.C. Evidentemente este es otro caso en que el rey asumió el trono al comienzo del año nuevo).",
         "end_date": "-000740-01-01T09:57:40.000Z",
         "event_name": "Pekaía",
-        "start_date": "-000742-01-01T09:57:40.000Z"
+        "start_date": "-000742-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "2 R 15:27-31",
         "description": "20 años. Aquí pareciera presentarse un problema concreto. 2 R 15:27 nos dice que Peka ascendió al trono en el año 52 del rey Uzías, lo cual nos llevaría al año 739 a.C. (791 a.C. menos 52 años). Si tomamos esto literalmente, tendríamos que comenzar el reinado de Peka en el año 739 y terminarlo en el año 719 a.C. Entonces habría que agregar los nueve años del reinado de Oseas, lo cual haría llegar el final del reinado de Oseas hasta el año 710 a.C. Esto no concuerda con la fecha que da el registro Asirio para la caída de Israel. <p>Se suele sugerir a menudo que los reinos de Jotam y de Acaz transcurrieron paralelamente al reinado de Peja, que gobernó en el año 752 a.C. En otras palabras, Peka comenzó a gobernar a Israel simultáneamente con Manahem. Si damos esto por sentado, entonces Peka habría gobernado desde el año 752 hasta el año 732 a.C. La referencia al año 52 del reinado de Uzías indica el año en que Peka comenzó a reinar por sí solo en el reino del norte, y la referencia a que su reinado duró 20 años, se refiere a la totalidad del periodo, comenzando desde el año 752 a.C.",
         "end_date": "-000732-01-01T09:57:40.000Z",
         "event_name": "Peka",
-        "start_date": "-000752-01-01T09:57:40.000Z"
+        "start_date": "-000752-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     },
     {
         "biblical_quote": "2 R 15:30-17:6",
         "description": "9 años. Oseas comenzó a gobernar en el año de la muerte de Peka, 732 a.C. y su reinado llegó a su fin cuando los asirios llevaron cautivo al reino del norte, en el año 723 a.C. Aquí nuevamnete los registros oficiales de los asirios ayudan a confirmar la cronología bíblica. Nos dicen que Salmanasar V murió en el año 722 a.C., inmediatamente después de conquistar una importante ciudad de Palestina (cf. 2 R 17:3-6). El sucesor de Salmanasar, Sargón II, se jactaba de haber capturado Israel en el año de su ascensión al trono de Asiria; es evidente que el gobierno asirio cambió de manos durante la conquista mencionada.",
         "end_date": "-000723-01-01T09:57:40.000Z",
         "event_name": "Oseas",
-        "start_date": "-000732-01-01T09:57:40.000Z"
+        "start_date": "-000732-01-01T09:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_kingdom"
     }
 ]

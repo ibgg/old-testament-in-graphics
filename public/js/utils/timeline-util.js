@@ -20,6 +20,7 @@ class BibleTimelineEvents{
 		this.endTimelineView;
 		this.zoomInFactor = 0.4;
 		this.zoomOutFactor = -0.4;
+		this.renderedTimeline = false;
 	}
 
 	setStartTimelineView(startTimelineView){
@@ -81,6 +82,7 @@ class BibleTimelineEvents{
 	getPostfix(){
 		return this.postfix;
 	}
+
 
 	onItemSelected(style){
 		var self = this;
@@ -165,6 +167,93 @@ class BibleTimelineEvents{
 			e.preventDefault();
 			self.zoomTimeline(self.zoomOutFactor);
 		});
+	}
+
+	addData(event){
+		var self = this;
+		this.data.push(event)
+
+		if (this.renderedTimeline == false){
+			this.renderedTimeline = true;
+			var startDate = event.start_date != undefined ? new Date(event.start_date) :  undefined;
+			var endDate = event.end_date != undefined ? new Date(event.end_date) : undefined;
+			var popOverDescription = event.biblical_quote != undefined ? event.biblical_quote + ". " + event.description : event.description;
+			var type = "range";
+			if (event.start_date == undefined || event.end_date == undefined){
+				type = "floatingRange"
+			}
+	
+			self.dataTable.addRow([
+					startDate,  
+					endDate, 
+					self.eventStyle.format(
+						event.event_name + ' - '+event.biblical_quote, 
+						event.description, 
+						event.event_name.replace(/ /g,'').replace(',','')+self.postfix,
+						event.event_name), 
+					self.rangeStyle.format(
+						event.event_name.length > 18 ? event.event_name.substring(0,18)+"..." : event.event_name, 
+						startDate != undefined ? startDate.getFullYear() : '', 
+						endDate != undefined ? endDate.getFullYear() : '', 
+						"close_"+event.event_name.replace(/ /g,'').replace(',','')+self.postfix,
+						popOverDescription, 
+						event.event_name.replace(/ /g,'').replace(',','')+self.postfix),
+					type
+					]);	
+
+			console.log("here");
+			console.log(this.dataTable);
+			console.log(this.data);
+			this.timeline = new links.Timeline(document.getElementById(this.contentDiv), this.options);
+			this.timeline.draw(this.dataTable);
+		}else{
+			//this.timeline.addItem(event);
+		}
+	}
+
+	drawTimeline(){
+		var self = this;
+		var itemStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{2}&quot;>&times;</a>" data-content="{3}" id="{4}" class = "timeline-box-label alert alert-success">{5}</div>';
+		this.dataTable = new google.visualization.DataTable();
+		this.dataTable.addColumn('datetime', 'start');
+		this.dataTable.addColumn('datetime', 'end');
+		this.dataTable.addColumn('string', 'content');	
+		this.dataTable.addColumn('string', 'rangeStyle');
+		this.dataTable.addColumn('string', 'className');
+	
+		this.data.forEach(function (element, index){
+			var startDate = element.start_date != undefined ? new Date(element.start_date) :  undefined;
+			var endDate = element.end_date != undefined ? new Date(element.end_date) : undefined;
+			var popOverDescription = element.biblical_quote != undefined ? element.biblical_quote + ". " + element.description : element.description;
+	
+			self.dataTable.addRow([
+					startDate,  
+					endDate, 
+					endDate == undefined ?
+					itemStyle.format(
+						element.event_name.length > 18 ? element.event_name.substring(0,18)+"..." : element.event_name, 
+						Math.abs(startDate.getFullYear()) + " a.C.",
+						"close_"+element.event_name.replace(/ /g,'').replace(',','')+self.postfix,
+						element.description, 
+						element.event_name.replace(/ /g,'').replace(',','')+self.postfix, 
+						element.event_name) : self.eventStyle.format(element.event_name) , 
+					self.rangeStyle != undefined ?
+					self.rangeStyle.format(
+						element.event_name.length > 18 ? element.event_name.substring(0,18)+"..." : element.event_name, 
+						startDate != undefined ? startDate.getFullYear() : '', 
+						endDate != undefined ? endDate.getFullYear() : '', 
+						"close_"+element.event_name.replace(/ /g,'').replace(',','')+self.postfix,
+						popOverDescription, 
+						element.event_name.replace(/ /g,'').replace(',','')+self.postfix) : undefined, 
+						'no-border'
+					]);		
+		});	
+
+		this.timeline = new links.Timeline(document.getElementById(this.contentDiv), this.options);
+	
+		this.timeline.draw(this.dataTable);
+	
+		document.getElementById(this.titleDiv).innerHTML = this.timelineTitle + " - (" + this.data.length + ")";
 	}
 
 	drawBoxTimeline(){

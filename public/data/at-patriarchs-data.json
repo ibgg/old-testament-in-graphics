@@ -4,34 +4,44 @@
         "description": "La Biblia afirma que Abraham tenía 100 años de edad cuando nació Isaac (Gn 21:25), Si Isaac nació en el 2006 a.C., Abraham habría nacido en el 2166 a.C., en la tierra de Ur de los Caldeos. Él habría llegado a Canaán a la edad de 75 años (Gn 12:4), en el año 2091 a.C., y murió cuando tenía 175 años, es decir, en el año 1991 a.C. (Gn 25:7)",
         "end_date": "-001991-01-01T06:57:40.000Z",
         "event_name": "Abraham",
-        "start_date": "-002166-01-01T06:57:40.000Z"
+        "start_date": "-002166-01-01T06:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "patriarchs"
     },
     {
         "biblical_quote": "Gn 25:26",
         "description": "Isaac tenía 60 años cuando nació Jacob (Gn 25:26), Si Jacob nació en el 2006 a.C., Isaac habría nacido en el 2006 a.C.. Si vivió hasta la edad de 180 años, habría muerto en el año 1886 a.C., es decir, unos 10 años antes de que Jacob llevara a su familia a Egipto..",
         "end_date": "-001886-01-01T06:57:40.000Z",
         "event_name": "Isaac",
-        "start_date": "-002066-01-01T06:57:40.000Z"
+        "start_date": "-002066-01-01T06:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "patriarchs"
     },
     {
         "biblical_quote": "Gn 46-49:33",
         "description": "Este patriarca tenía 130 años cuando entró en Egipto, y vivió allí durante 17 años, de modo que tenía 147 años cuando murió en el año 1859 a.C. (1876 a.C. menos 17 años). Si utilizaramos la &quot;fecha tardía&quot; hallaríamos que Jacob habría nacido en el año 2006 a.C. (1876 a.C. más 130 años).",
         "end_date": "-001859-01-01T06:57:40.000Z",
         "event_name": "Jacob",
-        "start_date": "-002006-01-01T06:57:40.000Z"
+        "start_date": "-002006-01-01T06:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "patriarchs"
     },
     {
         "biblical_quote": "Gn 50:26",
         "description": "Habría nacido en el año 1915 a.C. (1876 a.C.) y habría muerto en el año 1805 a.C. (Gn 50:26).",
         "end_date": "-001805-01-01T06:57:40.000Z",
         "event_name": "José",
-        "start_date": "-001915-01-01T06:57:40.000Z"
+        "start_date": "-001915-01-01T06:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "patriarchs"
     },
     {
         "biblical_quote": "Gn 15:13",
         "description": "Según Gn 15:13, Israel vivió en Egipto durante 400 años antes de su partida en el éxodo, es decir, al rededor del año 1876 a.C. (cf. Ga 3:17). Lo que significa que Jacob entró en Egipto cuando esta aún no era una nación muy poderosa. <b><t>Hay quienes insisten en que Jacob debió entrar en Egipto después del periodo de los hicsos, pues los Israelitas habrían podido encontrar un acceso más fácil después de esa época. Sin embargo, los hicsos salieron de Egipto hasta el año 1570 a.C. Esto recorrería la fecha del éxodo hasta el 1270 a.C., esta es conocida como &quot;la fecha tardía&quot;, la cual es dudosa en otros aspectos.",
         "end_date": "-001446-01-01T06:57:40.000Z",
         "event_name": "Israel en Egipto",
-        "start_date": "-001876-01-01T06:57:40.000Z"
+        "start_date": "-001876-01-01T06:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "patriarchs"
     }
 ]

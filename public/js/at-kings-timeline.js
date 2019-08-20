@@ -39,7 +39,7 @@ var addDataToTable = function (data, postfix){
 var initTimelines = function(){
 	loadData("data/at-kings-timeline-israel.json")
 	.then(function (israelData){
-		var eventStyle = '<div class="h6 mb-0 timeline-label">{3}</div>';
+		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
 		var israelRangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
 
 		var israelTimeline = new BibleTimelineEvents(israelData, 
@@ -50,7 +50,7 @@ var initTimelines = function(){
 			israelRangeStyle,
 			"_israel", "range");
 		
-		israelTimeline.drawRangeTimeline();
+		israelTimeline.drawTimeline();
 
 		loadData("data/at-kings-timeline-judah.json")
 		.then(function (judaData) {
@@ -65,7 +65,7 @@ var initTimelines = function(){
 				"_judah",
 				"range"
 			);
-			judahTimeline.drawRangeTimeline();
+			judahTimeline.drawTimeline();
 
 			israelTimeline.initializeControlsEvents(judahTimeline);
 			judahTimeline.initializeControlsEvents(israelTimeline);

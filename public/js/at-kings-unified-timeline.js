@@ -17,7 +17,7 @@ var initTimelines = function(){
 	.then(function (unifiedKingdomData){
 		unifiedKingdomData = JSON.parse(unifiedKingdomData);
 		
-		var eventStyle = '<div class="h6 mb-0 timeline-label">{3}</div>';
+		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
 		var rangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
 
 		var unifiedKingomTimeline = new BibleTimelineEvents(
@@ -32,7 +32,7 @@ var initTimelines = function(){
 		
 		var startVisibleRange = new Date("-001050-01-01T06:57:40.000Z");
 		var endVisibleRange = new Date("-000900-01-01T06:57:40.000Z");
-		unifiedKingomTimeline.drawRangeTimeline();
+		unifiedKingomTimeline.drawTimeline();
 		unifiedKingomTimeline.setStartTimelineView(startVisibleRange);
 		unifiedKingomTimeline.setEndTimelineView(endVisibleRange);
 		

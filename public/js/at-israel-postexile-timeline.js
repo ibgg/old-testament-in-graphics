@@ -26,7 +26,7 @@ var initTimelines = function(){
 			undefined, 
 			"_postexile", 
 			"box");
-		postExileTimeline.drawBoxTimeline();
+		postExileTimeline.drawTimeline();
 
 		postExileTimeline.initializeControlsEvents(undefined);
 		postExileTimeline.onRangeChange();

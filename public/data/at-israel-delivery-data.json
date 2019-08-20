@@ -2,28 +2,38 @@
     {
         "description": "Moisés nació en el 1526 a.C., vivió cuarenta años en el palacio real como hijo adoptivo de Hatshepsut, la hija de Tutmés I. Creció en las cortes de los faraones: Tumnosis I, II y la reina Hatsepsut",
         "event_name": "Nacimiento de Moisés",
-        "start_date": "-001526-01-01T06:57:40.000Z"
+        "start_date": "-001526-01-01T06:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_delivery"
     },
     {
         "biblical_quote": "Hechos 7:23",
         "description": "En el año 1486 a.C. (1526 a.C. menos 40 años) huyó al desierto y estuvo bajo exilio autoimpuesto en tierras madianitas durante el reinado de Tumnosis III durante cuarenta años",
         "event_name": "Moisés huye al desierto",
-        "start_date": "-001486-01-01T06:57:40.000Z"
+        "start_date": "-001486-01-01T06:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_delivery"
     },
     {
         "biblical_quote": "Hechos 7:30",
         "description": "<p>Moisés pasó 40 años en el desierto cuidando las ovejas de su suegro Jetro. Luego Dios lo llamó para que guiara a su pueblo en su salida de Egipto y ;lo convirtiera en un pueblo libre, en el año 1446 a.C. (cf. Hechos 7:30).</p> <p> Hasta el año 1406 a.C., Moisés condujo a los israelitas por un camino sembrado de rebeldías, hasta llegar finalmente a la Tierra Prometida.",
         "event_name": "El éxodo",
-        "start_date": "-001446-01-01T06:57:40.000Z"
+        "start_date": "-001446-01-01T06:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_delivery"
     },
     {
         "description": "Moisés tenía 120 años de edad cuando murió en el monte Nebo(Dt 34:7), mientras el pueblo acampaba en la rivera oriental en la rivera oriental.",
         "event_name": "Muerte de Moisés",
-        "start_date": "-001406-01-01T06:57:40.000Z"
+        "start_date": "-001406-01-01T06:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_delivery"
     },
     {
         "description": "Conquistan la tierra.",
         "event_name": "Conquistan la tierra",
-        "start_date": "-001339-01-01T06:57:40.000Z"
+        "start_date": "-001339-01-01T06:57:40.000Z",
+		"timeline_type": "biblical",
+		"group_id": "israel_delivery"
     }
 ]
