@@ -13,10 +13,16 @@ $(document).ready(function(){
 });
 
 var initTimelines = function(){
-	loadJSONData("data/at-postexile-data.json").then(function (postexileData){
-		postexileData = JSON.parse(postexileData);
+	var ref = firebase.database().ref("timelines");
+	ref.orderByChild('group_id').equalTo('postexile').once('value', function (snapshot){
+		var postexileData = [];
 		var itemStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{2}&quot;>&times;</a>" data-content="{3}" id="{4}" class = "timeline-box-label alert alert-success">{5}</div>';
 
+		for (var key in snapshot.val()) {
+			if (snapshot.val().hasOwnProperty(key)) {
+				postexileData.push(snapshot.val()[key]);
+			}
+		}
 		var postExileTimeline = new BibleTimelineEvents(
 			postexileData, 
 			'timeline_postexile', 

@@ -3,42 +3,56 @@
         "description": "XVIII dinastía de Egipto",
         "end_date": "-001528-01-01T06:57:40.000Z",
         "event_name": "XVIII dinastía de Egipto",
-        "start_date": "-001570-01-01T06:57:40.000Z"
+        "start_date": "-001570-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "pharaohs"
     },
     {
         "description": "Tutmosis I",
         "end_date": "-001508-01-01T06:57:40.000Z",
         "event_name": "Tutmosis I",
-        "start_date": "-001528-01-01T06:57:40.000Z"
+        "start_date": "-001528-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "pharaohs"
     },
     {
         "description": "Tutmosis II",
         "end_date": "-001504-01-01T06:57:40.000Z",
         "event_name": "Tutmosis II",
-        "start_date": "-001508-01-01T06:57:40.000Z"
+        "start_date": "-001508-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "pharaohs"
     },
     {
         "description": "Fue la única mujer que llegó el poder. Asumió el gobierno faraónico después de la muerte de Tutmosis II, y se hizo llamar a sí misma &quot;hija de Ra&quot;. Además, se describía a sí misma como totalmente divina. Algunos la han identificado como la hija del faraón que descubrió a Moisés en el Nilo (Ex 2:5-6), sin embargo, esto es pura especulación. - Kaiser, Walter C., and Duane A. Garret. Biblia De Estudio Arqueológica NVI: Un Viaje Ilustrado a Través De La Cultura Y La Historia Bíblicas. Miami, FL: Editorial Vida, 2009.",
         "end_date": "-001483-01-01T06:57:40.000Z",
         "event_name": "Hatshepsut",
-        "start_date": "-001504-01-01T06:57:40.000Z"
+        "start_date": "-001504-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "pharaohs"
     },
     {
         "description": "Al igual que su madre, Hatshepsut, también sostuvo que la protección divina estaba sobre él. Demostró ser un guerrero formidable, pues dirigió 17 campañas militares, consolidó el control egipcio sobre el levante y extendió las fronteras de influencia egipcia mucho más allá de las fronteras naturales (este faraón ha sido llamado: el &laquo;napoleón del Egipto Antiguo&raquo;). Algunos hisoriadores han sostenido que pereció con su compañía de carros mientras perseguía a los israelitas en el Mar Rojo.",
         "end_date": "-001450-01-08T06:57:40.000Z",
         "event_name": "Tutmosis III",
-        "start_date": "-001483-01-01T06:57:40.000Z"
+        "start_date": "-001483-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "pharaohs"
     },
     {
         "description": "Heredó el reino de Tutmosis III, cuando se encontraba en su apogeo. Sobresalía en las carreas, en el remo, tiro al arco, competencias de carruajes y artes ecustres. Se hace alarde en la Estela Elefantina (Un monumento grabado en piedra) que su fuerza era mayor que la de cualquier rey que hubiera vivido. Además, era experto en milicia, recibió tributo de Mitanni y babilonia, así como de los hititas. - Kaiser, Walter C., and Duane A. Garret. Biblia De Estudio Arqueológica NVI: Un Viaje Ilustrado a Través De La Cultura Y La Historia Bíblicas. Miami, FL: Editorial Vida, 2009.",
         "end_date": "-001423-01-01T06:57:40.000Z",
         "event_name": "Amenhotep II",
-        "start_date": "-001450-01-01T06:57:40.000Z"
+        "start_date": "-001450-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "pharaohs"
 	},
     {
         "description": "Tutmosis IV.",
         "end_date": "-001386-01-01T06:57:40.000Z",
         "event_name": "Tutmosis IV",
-        "start_date": "-001419-01-01T06:57:40.000Z"
+        "start_date": "-001419-01-01T06:57:40.000Z",
+		"timeline_type": "non-biblical",
+		"group_id": "pharaohs"
 	}
 ]

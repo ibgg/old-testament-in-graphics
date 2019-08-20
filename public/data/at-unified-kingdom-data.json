@@ -5,7 +5,7 @@
         "end_date": "-001043-01-01T06:57:40.000Z",
 		"event_name": "Los jueces",
 		"start_date": "-001380-01-01T06:57:40.000Z",
-		"timeline_type": "non-biblical",
+		"timeline_type": "biblical",
 		"group_id": "unified_kingdom"
     },
     {
@@ -14,7 +14,7 @@
         "end_date": "-001011-01-01T06:57:40.000Z",
         "event_name": "Saúl",
         "start_date": "-001043-01-01T06:57:40.000Z",
-		"timeline_type": "non-biblical",
+		"timeline_type": "biblical",
 		"group_id": "unified_kingdom"
     },
     {
@@ -23,7 +23,7 @@
         "end_date": "-001004-01-01T06:57:40.000Z",
         "event_name": "Is-boset y Abner",
         "start_date": "-001011-01-01T06:57:40.000Z",
-		"timeline_type": "non-biblical",
+		"timeline_type": "biblical",
 		"group_id": "unified_kingdom"
     },
     {
@@ -32,7 +32,7 @@
         "end_date": "-000971-01-01T06:57:40.000Z",
         "event_name": "David",
         "start_date": "-001011-01-01T06:57:40.000Z",
-		"timeline_type": "non-biblical",
+		"timeline_type": "biblical",
 		"group_id": "unified_kingdom"
     },
     {
@@ -41,7 +41,7 @@
         "end_date": "-000931-01-01T06:57:40.000Z",
         "event_name": "Salomón",
         "start_date": "-000971-01-01T06:57:40.000Z",
-		"timeline_type": "non-biblical",
+		"timeline_type": "biblical",
 		"group_id": "unified_kingdom"
     },
     {
@@ -50,7 +50,7 @@
 		"end_date": "-000586-01-01T06:57:40.000Z",
         "event_name": "Israel y Judá",
         "start_date": "-000931-01-01T06:57:40.000Z",
-		"timeline_type": "non-biblical",
+		"timeline_type": "biblical",
 		"group_id": "unified_kingdom"
     }
 ]

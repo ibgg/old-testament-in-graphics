@@ -13,12 +13,17 @@ $(document).ready(function(){
 });
 
 var initTimelines = function(){
-	loadJSONData("data/at-unified-kingdom-data.json")
-	.then(function (unifiedKingdomData){
-		unifiedKingdomData = JSON.parse(unifiedKingdomData);
-		
+	var ref = firebase.database().ref("timelines");
+	ref.orderByChild('group_id').equalTo('unified_kingdom').once('value', function (snapshot){
+		unifiedKingdomData = [];
 		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
 		var rangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
+
+		for (var key in snapshot.val()) {
+			if (snapshot.val().hasOwnProperty(key)) {
+				unifiedKingdomData.push(snapshot.val()[key]);
+			}
+		}
 
 		var unifiedKingomTimeline = new BibleTimelineEvents(
 			unifiedKingdomData, 
@@ -30,19 +35,19 @@ var initTimelines = function(){
 			"_unified_kingdom", 
 			"range");
 		
-		var startVisibleRange = new Date("-001050-01-01T06:57:40.000Z");
-		var endVisibleRange = new Date("-000900-01-01T06:57:40.000Z");
-		unifiedKingomTimeline.drawTimeline();
-		unifiedKingomTimeline.setStartTimelineView(startVisibleRange);
-		unifiedKingomTimeline.setEndTimelineView(endVisibleRange);
-		
-		unifiedKingomTimeline.initializeControlsEvents(undefined);
-		unifiedKingomTimeline.onRangeChange();
-		unifiedKingomTimeline.onItemSelected();
-		adjustVisibleTimeRangeToAccommodateAllEvents(unifiedKingomTimeline.getTimeline(), unifiedKingomTimeline.getData(), unifiedKingomTimeline.getPostfix(), startVisibleRange, endVisibleRange);
-
-		$('#sidebarToggle').on('click', function (){
-			unifiedKingomTimeline.getTimeline().redraw();
-		});
+			var startVisibleRange = new Date("-001050-01-01T06:57:40.000Z");
+			var endVisibleRange = new Date("-000900-01-01T06:57:40.000Z");
+			unifiedKingomTimeline.drawTimeline();
+			unifiedKingomTimeline.setStartTimelineView(startVisibleRange);
+			unifiedKingomTimeline.setEndTimelineView(endVisibleRange);
+			
+			unifiedKingomTimeline.initializeControlsEvents(undefined);
+			unifiedKingomTimeline.onRangeChange();
+			unifiedKingomTimeline.onItemSelected();
+			adjustVisibleTimeRangeToAccommodateAllEvents(unifiedKingomTimeline.getTimeline(), unifiedKingomTimeline.getData(), unifiedKingomTimeline.getPostfix(), startVisibleRange, endVisibleRange);
+	
+			$('#sidebarToggle').on('click', function (){
+				unifiedKingomTimeline.getTimeline().redraw();
+			});
 	});
 }

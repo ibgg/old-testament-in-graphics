@@ -113,6 +113,31 @@ function populateFamilytree(data) {
 }
 
 var initTimelines = function(){
+	var ref = firebase.database().ref("timelines");
+	ref.orderByChild('group_id').equalTo('universal_flood').once('value', function (snapshot){
+		universalFloodData = [];
+		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
+		var rangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
+
+		for (var key in snapshot.val()) {
+			if (snapshot.val().hasOwnProperty(key)) {
+				universalFloodData.push(snapshot.val()[key]);
+			}
+		}
+
+		var universalFloodTimeline = new BibleTimelineEvents(universalFloodData, 'timeline_universal_flood', 'card_title_universal_flood',"LÍNEA DEL TIEMPO DESDE EL DILUVIO HASTA ABRAHAM ",eventStyle, rangeStyle, "_universal_flood", "box");
+		universalFloodTimeline.drawTimeline();
+		universalFloodTimeline.initializeControlsEvents(undefined);
+		universalFloodTimeline.onRangeChange();
+		universalFloodTimeline.onItemSelected();
+		
+		populateFamilytree(universalFloodTimeline.getData());
+
+		$('#sidebarToggle').on('click', function (){
+			universalFloodTimeline.getTimeline().redraw();
+		});
+	});
+	/*
 	loadJSONData("data/at-universal-flood-data.json").then(function (universalFloodData){
 		universalFloodData = JSON.parse(universalFloodData);
 		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
@@ -130,4 +155,5 @@ var initTimelines = function(){
 			universalFloodTimeline.getTimeline().redraw();
 		});
 	});
+	*/
 }

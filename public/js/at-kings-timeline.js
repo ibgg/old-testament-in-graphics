@@ -37,8 +37,14 @@ var addDataToTable = function (data, postfix){
 }
 
 var initTimelines = function(){
-	loadData("data/at-kings-timeline-israel.json")
-	.then(function (israelData){
+	var ref = firebase.database().ref("timelines");
+	ref.orderByChild('group_id').equalTo('israel_kingdom').once('value', function (snapshot){
+		var israelData = [];
+		for (var key in snapshot.val()) {
+			if (snapshot.val().hasOwnProperty(key)) {
+				israelData.push(snapshot.val()[key]);
+			}
+		}
 		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
 		var israelRangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
 
@@ -52,11 +58,17 @@ var initTimelines = function(){
 		
 		israelTimeline.drawTimeline();
 
-		loadData("data/at-kings-timeline-judah.json")
-		.then(function (judaData) {
+		ref.orderByChild('group_id').equalTo('israel_kingdom').once('value', function (judahSnapshot){
+			var judahData = [];
+			for (var key in snapshot.val()) {
+				if (snapshot.val().hasOwnProperty(key)) {
+					judahData.push(snapshot.val()[key]);
+				}
+			}
+
 			var judahRangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-success"></div>';
 			var judahTimeline = new BibleTimelineEvents(
-				judaData,
+				judahData,
 				'timeline_judah', 
 				'card_title_judah',
 				"LÍNEA DEL TIEMPO DE LOS REYES DE JUDÁ", 
@@ -87,5 +99,6 @@ var initTimelines = function(){
 				judahTimeline.getTimeline().redraw();
 			});
 		});
+
 	});
 }

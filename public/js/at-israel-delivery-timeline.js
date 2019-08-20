@@ -13,20 +13,31 @@ $(document).ready(function(){
 });
 
 var initTimelines = function(){
-	loadJSONData("data/at-pharaohs-data.json").then(function (pharaohsData){
-		pharaohsData = JSON.parse(pharaohsData);
+	var ref = firebase.database().ref("timelines");
+	ref.orderByChild('group_id').equalTo('pharaohs').once('value', function (snapshot){
+		var pharaohsData = [];
 		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
 		var pharaohsRangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
 
+		for (var key in snapshot.val()) {
+			if (snapshot.val().hasOwnProperty(key)) {
+				pharaohsData.push(snapshot.val()[key]);
+			}
+		}
 		var pharaohsTimeline = new BibleTimelineEvents(pharaohsData, 'timeline_pharaohs', 'card_title_pharaohs',"LÍNEA DEL TIEMPO DE FARAONES DE EGIPTO ",eventStyle, pharaohsRangeStyle, "_pharaohs", "box");
 		pharaohsTimeline.drawTimeline();
 
-		loadJSONData("data/at-israel-delivery-data.json").then(function (israelData){
-			israelData = JSON.parse(israelData);
+		ref.orderByChild('group_id').equalTo('israel_delivery').once('value', function (snapshot){
+			israelData = [];
 			var itemStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{2}&quot;>&times;</a>" data-content="{3}" id="{4}" class = "timeline-box-label alert alert-success">{5}</div>';
+			for (var key in snapshot.val()) {
+				if (snapshot.val().hasOwnProperty(key)) {
+					israelData.push(snapshot.val()[key]);
+				}
+			}
+	
 			var israelTimeline = new BibleTimelineEvents(israelData, 'timeline_israel_delivery', 'card_title_israel_delivery', 'LÍNEA DE TIEMPO DE LOS EVENTOS DE ISRAEL HASTA EL ÉXODO', itemStyle, undefined, "_israel_delivery", "box");
 			israelTimeline.drawTimeline();
-			
 			pharaohsTimeline.initializeControlsEvents(israelTimeline);
 			israelTimeline.initializeControlsEvents(pharaohsTimeline);
 

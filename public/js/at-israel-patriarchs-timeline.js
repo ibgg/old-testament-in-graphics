@@ -15,8 +15,18 @@ $(document).ready(function(){
 });
 
 var initTimelines = function(){
-	loadJSONData("data/at-patriarchs-data.json").then(function (patriarchsData){
-		patriarchsData = JSON.parse(patriarchsData);
+	var ref = firebase.database().ref("timelines");
+	ref.orderByChild('group_id').equalTo('patriarchs').once('value', function (snapshot){
+		var patriarchsData = [];
+		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
+		var rangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
+
+		for (var key in snapshot.val()) {
+			if (snapshot.val().hasOwnProperty(key)) {
+				patriarchsData.push(snapshot.val()[key]);
+			}
+		}
+		
 		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
 		var rangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
 
