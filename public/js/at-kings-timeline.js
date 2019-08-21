@@ -98,7 +98,11 @@ var initTimelines = function(){
 				israelTimeline.getTimeline().redraw();
 				judahTimeline.getTimeline().redraw();
 			});
-		});
 
+			$('#sidebarToggleTop').on('click', function(){
+				israelTimeline.getTimeline().redraw();
+				judahTimeline.getTimeline().redraw();
+			});
+		});
 	});
 }

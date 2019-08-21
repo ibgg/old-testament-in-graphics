@@ -136,24 +136,8 @@ var initTimelines = function(){
 		$('#sidebarToggle').on('click', function (){
 			universalFloodTimeline.getTimeline().redraw();
 		});
-	});
-	/*
-	loadJSONData("data/at-universal-flood-data.json").then(function (universalFloodData){
-		universalFloodData = JSON.parse(universalFloodData);
-		var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
-		var rangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
-
-		var universalFloodTimeline = new BibleTimelineEvents(universalFloodData, 'timeline_universal_flood', 'card_title_universal_flood',"LÍNEA DEL TIEMPO DESDE EL DILUVIO HASTA ABRAHAM ",eventStyle, rangeStyle, "_universal_flood", "box");
-		universalFloodTimeline.drawTimeline();
-		universalFloodTimeline.initializeControlsEvents(undefined);
-		universalFloodTimeline.onRangeChange();
-		universalFloodTimeline.onItemSelected();
-		
-		populateFamilytree(universalFloodTimeline.getData());
-
-		$('#sidebarToggle').on('click', function (){
+		$('#sidebarToggleTop').on('click', function(){
 			universalFloodTimeline.getTimeline().redraw();
 		});
 	});
-	*/
 }

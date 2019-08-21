@@ -49,5 +49,8 @@ var initTimelines = function(){
 			$('#sidebarToggle').on('click', function (){
 				unifiedKingomTimeline.getTimeline().redraw();
 			});
+			$('#sidebarToggleTop').on('click', function(){
+				unifiedKingomTimeline.getTimeline().redraw();
+			});
 	});
 }

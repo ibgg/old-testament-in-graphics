@@ -96,5 +96,8 @@ var initTimelines = function(){
 		$('#sidebarToggle').on('click', function (){
 			creationTimeline.getTimeline().redraw();
 		});
+		$('#sidebarToggleTop').on('click', function(){
+			creationTimeline.getTimeline().redraw();
+		});
 	});
 }

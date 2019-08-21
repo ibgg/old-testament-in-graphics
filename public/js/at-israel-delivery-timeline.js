@@ -51,6 +51,10 @@ var initTimelines = function(){
 				pharaohsTimeline.getTimeline().redraw();
 				israelTimeline.getTimeline().redraw()
 			});
+			$('#sidebarToggleTop').on('click', function(){
+				pharaohsTimeline.getTimeline().redraw();
+				israelTimeline.getTimeline().redraw()
+			});	
 		});
 	});
 }

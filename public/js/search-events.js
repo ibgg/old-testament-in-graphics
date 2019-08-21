@@ -3,9 +3,11 @@ $(document).ready(function(){
 	google.setOnLoadCallback(initTimelines);
 
 	$('[data-toggle="popover"]').popover(); 
+	$("#startEvent").val(getUrlParameter("startDate"));
+	$("#endEvent").val(getUrlParameter("endDate"));
 });
 
-var initTimelines = function(){
+var initTimelines = function(){	
 	var startDateParam = "-"+getUrlParameter("startDate");
 	var endDateParam = "-"+getUrlParameter("endDate");
 	
@@ -38,5 +40,9 @@ var initTimelines = function(){
 		searchTimeline.initializeControlsEvents(undefined);
 		searchTimeline.onRangeChange();
 		searchTimeline.onItemSelected();
+
+		$('#sidebarToggle').on('click', function (){
+			searchTimeline.getTimeline().redraw();
+		});
 	});
 }

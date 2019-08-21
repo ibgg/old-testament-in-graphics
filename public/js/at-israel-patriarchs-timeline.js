@@ -40,5 +40,8 @@ var initTimelines = function(){
 		$('#sidebarToggle').on('click', function (){
 			patriarchsTimeline.getTimeline().redraw();
 		});
+		$('#sidebarToggleTop').on('click', function(){
+			patriarchsTimeline.getTimeline().redraw();
+		});
 	});
 }

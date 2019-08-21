@@ -41,5 +41,8 @@ var initTimelines = function(){
 		$('#sidebarToggle').on('click', function (){
 			postExileTimeline.getTimeline().redraw();
 		});
+		$('#sidebarToggleTop').on('click', function(){
+			postExileTimeline.getTimeline().redraw();
+		});
 	});
 }
