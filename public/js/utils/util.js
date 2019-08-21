@@ -132,3 +132,59 @@ function loadJSONData(jsonFile){
  function onToggleSideBar(){
 	 console.log("Toggle")
  }
+
+ function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
+$(document).ready(function (){
+	$('#search_events').on('click', function (e){
+		e.preventDefault()
+		var startDate = $("#startEvent").val();
+		var endDate = $("#endEvent").val();
+
+		if (!validateFields(startDate, endDate)) return;
+		window.location.href = "/search-events.html?startDate="+startDate+"&endDate="+endDate;		
+	});
+})
+
+var validateFields = function(startDate, endDate){
+	$('#startError').empty();
+	$('#endError').empty();
+	if(startDate.length ==0){
+		console.log("El año de inicio no puede ser vacío");
+		var error = $('<small>No puede ser vacío</small>')
+		$('#startError').append(error);
+		return false;
+	}
+	if (isNaN(startDate)){
+		console.log("El año de inicio debe ser un número");
+		var error = $('<small>Debe ser un número</small>')
+		$('#startError').append(error);
+		return false;
+	}
+	if(endDate.length ==0){
+		console.log("El año de fin no puede ser vacío");
+		var error = $('<small>No puede ser vacío</small>');
+		$('#endError').append(error);
+		return false;
+	}
+
+	if(isNaN(endDate)){
+		console.log("El año de fin debe ser un número");
+		var error = $('<small>Debe ser un número</small>')
+		$('#endError').append(error);
+		return false;
+	}
+
+	if (endDate >= startDate){
+		console.log("El año de fin debe ser menor que el año de inicio");
+		var error = $('<small>El año de fin debe ser menor que el año de inicio</small>')
+		$('#endError').append(error);
+		return false;
+	}
+	return true;
+}

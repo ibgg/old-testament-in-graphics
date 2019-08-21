@@ -363,3 +363,8 @@ div.timeline-axis-grid {
     border-left-style: dotted;
     border-width: 1px;
 }
+
+div.timeline-selectable div.timeline-event {
+    cursor: pointer;
+    color: #d2f4e8;
+}

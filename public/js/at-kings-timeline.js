@@ -13,7 +13,6 @@ $(document).ready(function(){
 	document.getElementById('general-event-description').innerHTML = general_event.description;
 });
 
-
 var loadData = function (json_file){
 	return new Promise(function (resolve, reject){
 		loadJSONData(json_file).then(function (response){
@@ -59,11 +58,11 @@ var initTimelines = function(){
 		
 		israelTimeline.drawTimeline();
 
-		ref.orderByChild('group_id').equalTo('israel_kingdom').once('value', function (judahSnapshot){
+		ref.orderByChild('group_id').equalTo('judah_kingdom').once('value', function (judahSnapshot){
 			var judahData = [];
-			for (var key in snapshot.val()) {
-				if (snapshot.val().hasOwnProperty(key)) {
-					judahData.push(snapshot.val()[key]);
+			for (var key in judahSnapshot.val()) {
+				if (judahSnapshot.val().hasOwnProperty(key)) {
+					judahData.push(judahSnapshot.val()[key]);
 				}
 			}
 

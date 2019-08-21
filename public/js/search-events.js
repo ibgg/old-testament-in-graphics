@@ -6,11 +6,17 @@ $(document).ready(function(){
 });
 
 var initTimelines = function(){
+	var startDateParam = "-"+getUrlParameter("startDate");
+	var endDateParam = "-"+getUrlParameter("endDate");
+	
+	var startDate = JSON.parse(JSON.stringify(new Date(endDateParam, 00,01)));
+	var endDate = JSON.parse(JSON.stringify(new Date(startDateParam, 00, 01)));
+
 	var ref = firebase.database().ref("timelines");
 	var eventStyle = '<div class="h6 mb-0 timeline-label">{0}</div>';
 	var rangeStyle = '<div role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="{0} ({1}, {2}) <a class=&quot;close&quot; href=&quot;#!&quot; id=&quot;{3}&quot;>&times;</a>" data-content="{4}" id="{5}" class = "alert alert-info"></div>';
 	
-	ref.orderByChild("start_date").startAt("-000566-01-01T06:57:40.000Z").endAt("-002055-01-01T06:57:40.000Z").once('value', function (snapshot){
+	ref.orderByChild("start_date").startAt(startDate).endAt(endDate).once('value', function (snapshot){
 		var data = [];
 		for (var key in snapshot.val()) {
 			if (snapshot.val().hasOwnProperty(key)) {
@@ -22,7 +28,7 @@ var initTimelines = function(){
 			data, 
 			'timeline', 
 			'card_title',
-			"LÍNEA DEL TIEMPO DEL REINO UNIFICADO", 
+			"EVENTOS DEL ANTIGUO TESTAMENTO", 
 			eventStyle,
 			rangeStyle,
 			"", 

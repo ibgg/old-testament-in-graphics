@@ -86,7 +86,39 @@
 			</li>
 			<!-- Divider -->
 			<hr class="sidebar-divider d-none d-md-block">
-
+			<li class="nav-item">
+				<span class="nav-link">
+					<form class="needs-validation" autocomplete="off"  novalidate>
+							<span>Generar timeline</span></a>
+							<div class="form-row">
+								<div class="input-group input-group-sm" style="margin-top: 5px; margin-bottom: 2.5px">
+									<input type="text" class="form-control bg-light border-0 small" id="startEvent" placeholder="Año de inicio" required>
+									<div class="input-group-append">
+											<div class="input-group-text">a.C.</div>
+									</div>
+								</div>
+								<div class="bg-danger text-white w-100" style="padding-left: 10px; padding-right:10px; border-radius:5px;" id="startError">
+									<small></small>
+								</div>	
+							</div>
+							<div class="form-row">
+								<div class="input-group input-group-sm" style="margin-top: 5px; margin-bottom: 2.5px">
+									<input type="text" class="form-control bg-light border-0 small" id="endEvent" placeholder="Año de fin" required>
+									<div class="input-group-append">
+											<div class="input-group-text">a.C.</div>
+									</div>
+								</div>
+								<div class="bg-danger text-white w-100" style="padding-left: 10px; padding-right:10px; border-radius:5px" id="endError">
+									<small></small>
+								</div>
+							</div>
+							<div class="form-row float-right">
+								<button type="submit" class="form-control-sm border-0 small btn btn-info mb-2 " style="margin-top: 5px; margin-bottom: 2.5px" id="search_events">Generar</button>
+							</div>
+					</form>
+				</span>
+			</li>
+				<hr class="sidebar-divider d-none d-md-block">
 			<!-- Sidebar Toggler (Sidebar) -->
 			<div class="text-center d-none d-md-inline">
 				<button class="rounded-circle border-0" id="sidebarToggle"></button>
@@ -167,6 +199,11 @@
 								<!-- Card Body -->
 								<div class="card-body-timeline d-flex">
 									<div class="timeline-area align-self-end">
+											<div class="d-flex justify-content-center" id="spinner_creation">
+													<div class="spinner-border text-primary" role="status">
+															<span class="sr-only">Loading...</span>
+													</div>		
+											</div>
 										<div id="timeline_creation"></div>
 									</div>
 								</div>
