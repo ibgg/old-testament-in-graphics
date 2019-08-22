@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	if(JSON.parse(localStorage.getItem("toggled")) == true) $('#sidebarToggle').click();
 	google.load("visualization", "1");
 	google.setOnLoadCallback(initTimelines);
 
@@ -43,6 +44,7 @@ var initTimelines = function(){
 
 		$('#sidebarToggle').on('click', function (){
 			searchTimeline.getTimeline().redraw();
+			localStorage.setItem("toggled", !JSON.parse(localStorage.getItem("toggled")));
 		});
 	});
 }

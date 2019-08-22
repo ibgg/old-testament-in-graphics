@@ -4,6 +4,7 @@ var general_event = {
 }
 
 $(document).ready(function(){
+	if(JSON.parse(localStorage.getItem("toggled")) == true) $('#sidebarToggle').click();
 	google.load("visualization", "1");
 	google.setOnLoadCallback(initTimelines);
 
@@ -49,11 +50,13 @@ var initTimelines = function(){
 
 			$('#sidebarToggle').on('click', function (){
 				pharaohsTimeline.getTimeline().redraw();
-				israelTimeline.getTimeline().redraw()
+				israelTimeline.getTimeline().redraw();
+				localStorage.setItem("toggled", !JSON.parse(localStorage.getItem("toggled")));
 			});
 			$('#sidebarToggleTop').on('click', function(){
 				pharaohsTimeline.getTimeline().redraw();
-				israelTimeline.getTimeline().redraw()
+				israelTimeline.getTimeline().redraw();
+				localStorage.setItem("toggled", !JSON.parse(localStorage.getItem("toggled")));
 			});	
 		});
 	});

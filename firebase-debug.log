@@ -1,0 +1,29 @@
+[debug] [2019-08-22T19:20:51.693Z] ----------------------------------------------------------------------
+[debug] [2019-08-22T19:20:51.696Z] Command:       /Users/holmes/.nvm/versions/node/v12.4.0/bin/node /Users/holmes/.nvm/versions/node/v12.4.0/bin/firebase serve
+[debug] [2019-08-22T19:20:51.696Z] CLI Version:   7.0.1
+[debug] [2019-08-22T19:20:51.696Z] Platform:      darwin
+[debug] [2019-08-22T19:20:51.696Z] Node Version:  v12.4.0
+[debug] [2019-08-22T19:20:51.707Z] Time:          Thu Aug 22 2019 13:20:51 GMT-0600 (Mountain Daylight Time)
+[debug] [2019-08-22T19:20:51.707Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-22T19:20:51.726Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-22T19:20:51.727Z] > authorizing via signed-in user
+[debug] [2019-08-22T19:20:51.727Z] [iam] checking project old-testament-in-graphics for permissions ["firebase.projects.get"]
+[debug] [2019-08-22T19:20:51.729Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-22T19:20:51.729Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-22T19:20:52.068Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-22T19:20:52.076Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/old-testament-in-graphics:testIamPermissions  
+
+[debug] [2019-08-22T19:20:52.922Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-22T19:20:52.923Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/old-testament-in-graphics  
+ 
+[debug] [2019-08-22T19:20:53.318Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/holmes/Documents/MDIV/Introduccion al Antiguo Testamento I/old-testament-in-graphics'...
+[info] 
+[debug] [2019-08-22T19:20:53.320Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/924352912804/clients/_:getWebAppConfig  
+ 
+[debug] [2019-08-22T19:20:53.844Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000

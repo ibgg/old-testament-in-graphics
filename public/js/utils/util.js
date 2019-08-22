@@ -188,3 +188,11 @@ var validateFields = function(startDate, endDate){
 	}
 	return true;
 }
+
+var getSideBarStatus = function (){
+	if (localStorage.getItem("toggled") == null || localStorage.getItem("toggled") == undefined || JSON.parse(localStorage.getItem("toggled") == false))
+		return false;
+	else if (localStorage.getItem("toggled") == true)
+		return true;
+
+}
