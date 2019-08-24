@@ -167,7 +167,7 @@
 								<div
 									class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
 									<h6 class="m-0 font-weight-bold text-primary" id="card_title_postexile" style="width:50%"></h6>
-									<form class="form-inline d-flex justify-content-end">
+									<form class="form-inline d-flex justify-content-end" autocomplete="off">
 											<div class="form-group d-flex justify-content-end">
 											<div>
 												<a href="#" class="btn btn-primary btn-sm btn-circle" id="zoom_in_postexile">
@@ -185,14 +185,15 @@
 													<i class="far fa-square" id="zoom_in_postexile"></i>
 												</a>
 											</div>
-
-											<input type="text" class="form-control form-control-sm border-1 small"
-												placeholder="Buscar por nombre..." aria-label="Search"
-												aria-describedby="basic-addon2" id="search_postexile">
-											<div class="input-group-append">
-												<button class="btn btn-sm btn-primary" type="button" id="btn_postexile">
-													<i class="fas fa-search fa-sm"></i>
-												</button>
+											<div class="input-group input-group-sm">
+													<input type="text" class="form-control form-control-sm border-1 small"
+													placeholder="Buscar por nombre..." aria-label="Search"
+													aria-describedby="basic-addon2" id="search_postexile">
+												<div class="input-group-append">
+													<button class="btn btn-sm btn-primary" type="button" id="btn_postexile">
+														<i class="fas fa-search fa-sm"></i>
+													</button>
+												</div>
 											</div>
 										</div>
 									</form>
