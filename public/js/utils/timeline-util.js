@@ -167,6 +167,37 @@ class BibleTimelineEvents{
 			e.preventDefault();
 			self.zoomTimeline(self.zoomOutFactor);
 		});
+
+		$('#download'+this.postfix).on('click', function (e){
+			e.preventDefault();
+			var jdomElement = $('#timeline'+self.postfix);
+			var domElement = jdomElement.get(0);
+			var timelineWidth = jdomElement.first()[0].clientWidth+20;
+			var timelineHeight = jdomElement.first()[0].clientHeight;
+			var offsety = jdomElement.offset().top;
+			var filename = "timeline"+self.postfix+".png";
+		
+				html2canvas(domElement, {height: timelineHeight, width: timelineWidth, y: offsety, scrollX:10}).then(function(canvas) {
+					var link = document.createElement('a');
+		
+					if (typeof link.download === 'string') {
+						link.href = canvas.toDataURL();
+						link.download = filename;
+				
+						//Firefox requires the link to be in the body
+						document.body.appendChild(link);
+				
+						//simulate click
+						link.click();
+				
+						//remove the link when done
+						document.body.removeChild(link);
+					} else {
+						window.open(canvas.toDataURL());
+					}
+				});
+			//downloadTimeline($('#timeline')+self.postfix, postfix);
+		});
 	}
 
 	addData(event){
@@ -374,4 +405,33 @@ class BibleTimelineEvents{
 		}
 		return row;
 	}
+
+	downloadTimeline (jdomElement, postfix){
+		var domElement = jdomElement.get(0);
+		var timelineWidth = jdomElement.first()[0].clientWidth+20;
+		var timelineHeight = jdomElement.first()[0].clientHeight;
+		var offsety = jdomElement.offset().top;
+		var filename = "timeline"+postfix;
+	
+			html2canvas(domElement, {height: timelineHeight, width: timelineWidth, y: offsety, scrollX:10}).then(function(canvas) {
+				var link = document.createElement('a');
+	
+				if (typeof link.download === 'string') {
+					link.href = canvas.toDataURL();
+					link.download = filename;
+			
+					//Firefox requires the link to be in the body
+					document.body.appendChild(link);
+			
+					//simulate click
+					link.click();
+			
+					//remove the link when done
+					document.body.removeChild(link);
+				} else {
+					window.open(canvas.toDataURL());
+				}
+			});
+	}
+	
 }

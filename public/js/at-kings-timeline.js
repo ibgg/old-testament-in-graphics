@@ -35,6 +35,7 @@ var addDataToTable = function (data, postfix){
 		$('#dataTable'+postfix).DataTable().row.add(row).draw().nodes().to$().addClass('pointer');
 	}
 	$("#spinner_table"+postfix).remove();
+
 }
 
 var initTimelines = function(){
