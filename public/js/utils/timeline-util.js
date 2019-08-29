@@ -216,6 +216,9 @@ class BibleTimelineEvents{
 				
 						//remove the link when done
 						document.body.removeChild(link);
+						if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+							window.open(canvas.toDataURL());
+						 }
 					} else {
 						window.open(canvas.toDataURL());
 					}
