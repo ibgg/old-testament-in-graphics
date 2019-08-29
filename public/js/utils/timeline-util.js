@@ -170,20 +170,44 @@ class BibleTimelineEvents{
 
 		$('#download'+this.postfix).on('click', function (e){
 			e.preventDefault();
-			var jdomElement = $('#timeline'+self.postfix);
+			var jdomElement = $('#timeline'+self.postfix);//.clone();
 			var domElement = jdomElement.get(0);
 			var timelineWidth = jdomElement.first()[0].clientWidth+20;
 			var timelineHeight = jdomElement.first()[0].clientHeight;
-			var offsety = jdomElement.offset().top;
+			var offsety = jdomElement.offset().top-10;
 			var filename = "timeline"+self.postfix+".png";
-		
-				html2canvas(domElement, {height: timelineHeight, width: timelineWidth, y: offsety, scrollX:10}).then(function(canvas) {
+			html2canvas(domElement, {
+				height: timelineHeight, 
+				width: timelineWidth, 
+				y: offsety, 
+				scrollX:10,
+				logging: false,
+				onclone: function(documentClonned){
+					/*
+					var timelineHeader = document.createElement("h6");
+					var textTimelineHeader = document.createTextNode(self.timelineTitle);
+					timelineHeader.appendChild(textTimelineHeader);
+					timelineHeader.setAttribute("style","text-align-last:center; position: absolute; top:0px; height:100px;");
+					timelineHeader.setAttribute("class", "m-0 font-weight-bold text-dark");
+					documentClonned.getElementById("timeline"+self.postfix).children[0].children[0].appendChild(timelineHeader);
+					*/
+
+					var copyrightdiv = document.createElement("small");
+					var textCopyright = document.createTextNode("Copyright © Old Testament in Graphics 2019");
+					copyrightdiv.appendChild(textCopyright);
+					copyrightdiv.setAttribute("style","text-align-last:center; position: absolute; top:"+(jdomElement.first()[0].clientHeight-30)+"px;");
+
+					documentClonned.getElementById("timeline"+self.postfix).children[0].children[0].appendChild(copyrightdiv);
+					documentClonned.getElementById("timeline"+self.postfix).children[0].setAttribute("style","border:3px");
+					}
+				}).then(function(canvas) {
 					var link = document.createElement('a');
 		
 					if (typeof link.download === 'string') {
 						link.href = canvas.toDataURL();
+						
 						link.download = filename;
-				
+
 						//Firefox requires the link to be in the body
 						document.body.appendChild(link);
 				
