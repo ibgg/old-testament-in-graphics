@@ -154,6 +154,7 @@ $(document).ready(function (){
 var validateFields = function(startDate, endDate){
 	$('#startError').empty();
 	$('#endError').empty();
+	
 	if(startDate.length ==0){
 		console.log("El año de inicio no puede ser vacío");
 		var error = $('<small>No puede ser vacío</small>')
@@ -179,6 +180,9 @@ var validateFields = function(startDate, endDate){
 		$('#endError').append(error);
 		return false;
 	}
+
+	startDate = JSON.parse(JSON.stringify(new Date(startDate, 00,01)));
+	endDate = JSON.parse(JSON.stringify(new Date(endDate, 00, 01)));
 
 	if (endDate >= startDate){
 		console.log("El año de fin debe ser menor que el año de inicio");
